@@ -1,0 +1,13 @@
+*.dat
+*.fls
+*.log
+*.gz
+*.bbl
+*.aux
+*.fdb_latexmk
+*.blg
+*.out
+
+.vscode
+.ipynb_checkpoints
+**/__pycache__/
