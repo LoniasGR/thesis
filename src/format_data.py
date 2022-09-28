@@ -1,3 +1,4 @@
+from enum import unique
 import json
 import math
 from helpers import get_actions, remove_useless_intents, get_unique_functionalities
@@ -25,19 +26,34 @@ def main():
     total_results = 0
     examples = 0
     with open("./actions.txt", "w") as debug_file:
-        debug_file.write(f"There are {len(unique_actions)} unique actions")
+        debug_file.write(f"There are {len(unique_actions)} unique actions\n")
         with open("./data.dat", "w") as out_file:
 
             for j, line in enumerate(lines):
-                debug_file.write*"------------------------------------------------------"
+                debug_file.write(
+                    "------------------------------------------------------\n"
+                )
+                debug_file.write(f"| DIALOGUE {j}\n")
+                debug_file.write(
+                    f"------------------------------------------------------\n"
+                )
                 data = json.loads(line)
                 for i, e in enumerate(data["events"]):
-                    if e["event"] == "action" and e["name"] == "action_smart_suggestion":
+                    if (
+                        e["event"] == "action"
+                        and e["name"] == "action_smart_suggestion"
+                    ):
                         examples += 1
-                        intents, previous_suggestions, _ = get_actions(data["events"][:i])
+                        (
+                            intents,
+                            previous_suggestions,
+                            remaining_suggestions,
+                        ) = get_actions(data["events"][:i])
                         debug_file.write(f"User intents: {intents}\n")
-                        debug_file.write(f"Bot previous suggestions: {previous_suggestions}\n")
-                        context = remove_useless_intents(intents)
+                        debug_file.write(
+                            f"Bot previous suggestions: {previous_suggestions}\n"
+                        )
+                        context = remove_useless_intents(intents + previous_suggestions)
                         debug_file.write(f"Context: {context}\n")
                         action = data["events"][i + 2]["value"]
                         debug_file.write(f"Action: {action}\n")
@@ -76,10 +92,23 @@ def main():
                         else:
                             result = 1
                             total_results += 1
+                        out_file.write(f"shared |{' '.join(map(str, context))}\n")
                         out_file.write(
-                            f"{action_id+1}:{result}:{probability} | {' '.join(map(str, context))}\n"
+                            f"{action_id+1}:{result}:{probability} |Action suggestion={action}\n"
                         )
-            print(f"Loss: {total_results/examples}")
+                        for sug in remaining_suggestions:
+                            if sug != action:
+                                out_file.write(
+                                    f"{unique_actions.index(sug)} |Action suggestion={sug}\n"
+                                )
+                        out_file.write("\n")
+
+                        if result == 1:
+                            debug_file.write("Outcome: ACCEPTED\n")
+                        else:
+                            debug_file.write("Outcome: REJECTED\n")
+                        debug_file.write("====\n")
+            debug_file.write(f"Loss: {total_results/examples}\n")
 
 
 if __name__ == "__main__":
