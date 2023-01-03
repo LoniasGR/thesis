@@ -30,7 +30,8 @@ def get_actions(data):
         for f in list_of_functionalities
         if f not in previous_functionalities_from_intents
         and f not in previous_slot_values
-    ]
+    ] + ["no_action"]
+
     return (
         previous_intents,
         previous_slot_values,
@@ -76,4 +77,5 @@ def remove_useless_intents(intents):
 
 def get_unique_functionalities():
     functionalities = intent_to_functionality_dict.values()
-    return list(set(functionalities))
+    return sorted(list(set(functionalities)))
+

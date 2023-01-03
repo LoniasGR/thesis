@@ -57,7 +57,6 @@ def main():
                         debug_file.write(f"Context: {context}\n")
                         action = data["events"][i + 2]["value"]
                         debug_file.write(f"Action: {action}\n")
-                        action_id = unique_actions.index(action)
                         # User closed the chat.
                         if len(data["events"]) <= i + 4:
                             result = 0
@@ -94,12 +93,12 @@ def main():
                             total_results += 1
                         out_file.write(f"shared |{' '.join(map(str, context))}\n")
                         out_file.write(
-                            f"{action_id+1}:{result}:{probability} |Action suggestion={action}\n"
+                            f"{unique_actions.index(action)}:{result}:{probability} |{action}\n"
                         )
                         for sug in remaining_suggestions:
                             if sug != action:
                                 out_file.write(
-                                    f"{unique_actions.index(sug)} |Action suggestion={sug}\n"
+                                    f"|{sug}\n"
                                 )
                         out_file.write("\n")
 
