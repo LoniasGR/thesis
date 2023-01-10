@@ -47,9 +47,9 @@
 \ProvidesClass{ntua-ece-thesis}[\filedate\space v\fileversion\space NTUA ECE Thesis class.]
 
 % Defining licence type
-\newcommand{\@license}{creativecommons}
-\DeclareOption{nonprofituse}{\renewcommand{\@license}{nonprofituse}}
-\DeclareOption{creativecommons}{\renewcommand{\@license}{creativecommons}}
+\newcommand{\@license}{0}
+\DeclareOption{nonprofituse}{\renewcommand{\@license}{1}}
+\DeclareOption{creativecommons}{\renewcommand{\@license}{0}}
 
 % Defining bibliography style
 \newcommand{\@bibstyle}{apa}
@@ -356,7 +356,7 @@
 \newcommand{\@creativecommons}{%
 Η Εργασία διατίθεται με άδεια \en{Creative Commons} Αναφορά Δημιουργού 4.0 Διεθνές.
 Για να δείτε ένα αντίγραφο αυτής της άδειας, επισκεφθείτε το \url{http://creativecommons.org/licenses/by/4.0/}
-ή στείλετε επιστολή στο \en{Creative Commons,PO Box 1866, Mountain View, CA 94042, USA.}
+ή στείλετε επιστολή στο \en{Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.}
 }
 
 \newcommand{\@nonprofituse}{%
@@ -386,16 +386,11 @@
     \vspace{5ex}
 
     \begin{justify}
-        \ifdefstring{\@licence}{creativecommons}{%
+        \ifnum \@license=0
             \noindent \@creativecommons
-        }{%
-            % Do nothing
-        }
-        \ifdefstring{\@licence}{nonprofituse}{%
+        \else
             \noindent \@nonprofituse
-        }{%
-            % Do nothing
-        }
+        \fi
     \end{justify}
 
     \begin{justify}
