@@ -4,7 +4,7 @@ import math
 from helpers import get_actions, remove_useless_intents, get_unique_functionalities
 
 
-def create_vw_data(filename, lines, debug_file):
+def create_vw_data(filename, lines, debug_file, all_data_file):
     unique_actions = get_unique_functionalities()
 
     total_results = 0
@@ -84,6 +84,7 @@ def create_vw_data(filename, lines, debug_file):
                     probability = 1.0 / (len(remaining_suggestions) + 1)
 
                     out_file.write(f"shared |{' '.join(map(str, context))}\n")
+                    all_data_file.write(f"shared |{' '.join(map(str, context))}\n")
 
                     if result == 1:
                         written_result = -1
@@ -92,12 +93,19 @@ def create_vw_data(filename, lines, debug_file):
                     out_file.write(
                         f"{unique_actions.index(action)}:{float(written_result)}:{probability} |{action}\n"
                     )
+                    all_data_file.write(
+                        f"{unique_actions.index(action)}:{float(written_result)}:{probability} |{action}\n"
+                    )
                     for sug in remaining_suggestions:
                         if sug != action:
                             out_file.write(
                                 f"|{sug}\n"
                             )
+                            all_data_file.write(
+                                f"|{sug}\n"
+                            )
                     out_file.write("\n")
+                    all_data_file.write("\n")
 
                     if result == 1:
                         debug_file.write("Outcome: ACCEPTED\n")
@@ -120,22 +128,23 @@ def main():
             actions_f.write(f"{i+1} - {action} \n")
 
     with open("./actions.txt", "w") as debug_file:
-        debug_file.write(f"There are {len(unique_actions)} unique actions\n")
+        with open("./data.dat", "w") as all_data_file:
+            debug_file.write(f"There are {len(unique_actions)} unique actions\n")
 
-        total_results, examples, useful_samples, loss1 = create_vw_data("./train.dat", lines[: math.floor(0.7 * len(lines))], debug_file)
+            total_results, examples, useful_samples, loss1 = create_vw_data("./train.dat", lines[: math.floor(0.7 * len(lines))], debug_file, all_data_file)
 
-        temp_total_results, temp_examples, temp_useful_samples, loss2 = create_vw_data("./test.dat", lines[math.floor(0.7 * len(lines)) :], debug_file)
+            temp_total_results, temp_examples, temp_useful_samples, loss2 = create_vw_data("./test.dat", lines[math.floor(0.7 * len(lines)) :], debug_file, all_data_file)
 
-        total_results += temp_total_results
-        examples += temp_examples
-        useful_samples += temp_useful_samples
+            total_results += temp_total_results
+            examples += temp_examples
+            useful_samples += temp_useful_samples
 
-        debug_file.write(f"Total number of conversations: {len(lines)}\n")
-        debug_file.write(f"Total number of useful conversations: {useful_samples}\n")
-        debug_file.write(f"Total number of examples: {examples}\n")
-        debug_file.write(f"Loss: {total_results/examples}\n")
-        debug_file.write(f"Train loss: {loss1}\n")
-        debug_file.write(f"Test loss: {loss2}")
+            debug_file.write(f"Total number of conversations: {len(lines)}\n")
+            debug_file.write(f"Total number of useful conversations: {useful_samples}\n")
+            debug_file.write(f"Total number of examples: {examples}\n")
+            debug_file.write(f"Loss: {total_results/examples}\n")
+            debug_file.write(f"Train loss: {loss1}\n")
+            debug_file.write(f"Test loss: {loss2}")
 
 
 
