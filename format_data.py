@@ -1,4 +1,3 @@
-from enum import unique
 import json
 import math
 from helpers import get_actions, remove_useless_intents, get_unique_functionalities
@@ -13,9 +12,7 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
 
     with open(filename, "w") as out_file:
         for j, line in enumerate(lines):
-            debug_file.write(
-                "------------------------------------------------------\n"
-            )
+            debug_file.write("------------------------------------------------------\n")
             debug_file.write(f"| DIALOGUE {j}\n")
             debug_file.write(
                 f"------------------------------------------------------\n"
@@ -24,10 +21,7 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
 
             counted = False
             for i, e in enumerate(data["events"]):
-                if (
-                    e["event"] == "action"
-                    and e["name"] == "action_smart_suggestion"
-                ):
+                if e["event"] == "action" and e["name"] == "action_smart_suggestion":
                     if counted == False:
                         useful_samples += 1
                         counted = True
@@ -86,24 +80,16 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
                     out_file.write(f"shared |{' '.join(map(str, context))}\n")
                     all_data_file.write(f"shared |{' '.join(map(str, context))}\n")
 
-                    if result == 1:
-                        written_result = -1
-                    else:
-                        written_result = 0
                     out_file.write(
-                        f"{unique_actions.index(action)}:{float(written_result)}:{probability} |{action}\n"
+                        f"{unique_actions.index(action)}:{float(result)}:{probability} |{action}\n"
                     )
                     all_data_file.write(
-                        f"{unique_actions.index(action)}:{float(written_result)}:{probability} |{action}\n"
+                        f"{unique_actions.index(action)}:{float(result)}:{probability} |{action}\n"
                     )
                     for sug in remaining_suggestions:
                         if sug != action:
-                            out_file.write(
-                                f"|{sug}\n"
-                            )
-                            all_data_file.write(
-                                f"|{sug}\n"
-                            )
+                            out_file.write(f"|{sug}\n")
+                            all_data_file.write(f"|{sug}\n")
                     out_file.write("\n")
                     all_data_file.write("\n")
 
@@ -113,8 +99,7 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
                         debug_file.write("Outcome: REJECTED\n")
                     debug_file.write("====\n")
 
-    return total_results, examples, useful_samples, total_results/examples
-
+    return total_results, examples, useful_samples, total_results / examples
 
 
 def main():
@@ -131,21 +116,37 @@ def main():
         with open("./data.dat", "w") as all_data_file:
             debug_file.write(f"There are {len(unique_actions)} unique actions\n")
 
-            total_results, examples, useful_samples, loss1 = create_vw_data("./train.dat", lines[: math.floor(0.7 * len(lines))], debug_file, all_data_file)
+            total_results, examples, useful_samples, loss1 = create_vw_data(
+                "./train.dat",
+                lines[: math.floor(0.7 * len(lines))],
+                debug_file,
+                all_data_file,
+            )
 
-            temp_total_results, temp_examples, temp_useful_samples, loss2 = create_vw_data("./test.dat", lines[math.floor(0.7 * len(lines)) :], debug_file, all_data_file)
+            (
+                temp_total_results,
+                temp_examples,
+                temp_useful_samples,
+                loss2,
+            ) = create_vw_data(
+                "./test.dat",
+                lines[math.floor(0.7 * len(lines)) :],
+                debug_file,
+                all_data_file,
+            )
 
             total_results += temp_total_results
             examples += temp_examples
             useful_samples += temp_useful_samples
 
             debug_file.write(f"Total number of conversations: {len(lines)}\n")
-            debug_file.write(f"Total number of useful conversations: {useful_samples}\n")
+            debug_file.write(
+                f"Total number of useful conversations: {useful_samples}\n"
+            )
             debug_file.write(f"Total number of examples: {examples}\n")
             debug_file.write(f"Loss: {total_results/examples}\n")
             debug_file.write(f"Train loss: {loss1}\n")
             debug_file.write(f"Test loss: {loss2}")
-
 
 
 if __name__ == "__main__":
