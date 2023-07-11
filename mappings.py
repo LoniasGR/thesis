@@ -67,7 +67,6 @@ limited_intent_to_functionality_dict = {
     "ask_chitchat": "no_action",
     "mask_faq": "no_action",
     "vaccines": "no_action",
-    "time_declare": "no_action",
     "pharma_search": "pharmacy_form",
     "greetings": "no_action",  # maybe tell we haven't greeted ourselves
     "goodbye": "no_action",
@@ -110,6 +109,53 @@ limited_intent_to_functionality_dict = {
 }
 
 
+limited_intent_to_dialogue_dict = {
+    "covid_stats": "Θα ήθελα να μάθω για τα κρούσματα",
+    "EODY_faq": "",
+    "ask_chitchat": "Τι κάνεις;",
+    "mask_faq": "Πώς φοράμε την μάσκα;",
+    "vaccines": "Τι γίνεται με τα εμβόλια;",
+    "pharma_search": "Υπάρχει φαρμακείο κοντά μου;",
+    "greetings": "Χαίρεται!",  # maybe tell we haven't greeted ourselves
+    "goodbye": "Αντίο!",
+    "thank_you": "Ευχαριστώ",
+    "didnt_understand": "Δεν κατάλαβα",
+    "am_i_ill": "Μήπως έχω COVID-19;",
+    "why_avoid_pharma": "no_action",
+    "what_to_do_if_positive": "Τι να κάνω αν είμαι θετικός;",
+    "symptoms": "Ποιά είναι τα συμπτώματα του COVID-19",
+    "whats_your_name": "Πώς σε λένε;",
+    "ways_of_protection": "Πώς μπορώ να προστατευτώ από τον COVID-19;",
+    "underlying_conditions": "Ποιά είναι τα υποκείμενα νοσήματα;",
+    "personal_ways_of_protection": "Πώς μπορώ να προστατευτώ από τον COVID-19;",
+    "collective_ways_of_protection": "Πώς μπορούμε να μειώσουμε την εξάπλωση του COVID-19;",
+    "all_ways_of_protection": "Πώς μπορούμε να προστατευτούμε από τον COVID-19;",
+    "test_cost": "Πόσο κοστίζει ένα τέστ;",
+    "pcr_test_cost": "Πόσο κοστίζει ένα PCR τεστ;",
+    "rapid_test_cost": "Πόσο κοστίζει ένα rapid τεστ;",
+    "all_test_cost": "Πόσο κοστίζουν τα τεστ για τον COVID-19;",
+    "self_test": "Πώς κάνω self test;",
+    "test_types": "Ποιά είναι τα είδη των τέστ για COVID-19;",
+    "general_knowledge_tests": "Τι ξέρεις για τα τεστ του COVID-19;",
+    "out_of_scope": "Πώς είναι ο καιρός σήμερα;",
+    "vaccine_stats": "Πόσοι εμβολιασμοί έγιναν χθές;",
+    "find_new_icus": "Πόσοι βρίσκονται σε ΜΕΘ σήμερα;",
+    "positive_feedback": "Είσαι πολύ καλή!",
+    "greetings+covid_stats": "Γεία! Πόσος κόσμος είναι θετικός σήμερα;",
+    "greetings+pharma_search": "Γεία! Μπορείς να μου βρείς ένα κοντινό φαρμακείο;",
+    "greetings+ask_chitchat": "Γεία! Πώς είσαι;",
+    "thank_you+covid_stats": "Ευχαριστώ! Μπορείς να μου πείς πόσα ήταν τα κρούσματα σήμεαρα;",
+    "greetings+whats_your_name": "Γεία! Πώς σε λένε;",
+    "what_is_ilsp+what_is_athena": "Τί είναι το Αθηνά και το ILSP; ",
+    "why_theano": "Γιατί σε λένε Θεανώ;",
+    "may_i_ask": "Να ρωτήσω κάτι;",
+    "sorry": "Συγγνώμη",
+    "what_is_athena": "Τι είναι το Αθηνά;",
+    "what_is_ilsp": "Τι είναι το ILSP;",
+    "no_action": "no_action",
+}
+
+
 list_of_functionalities = [
     "icu_stats_form",
     "vaccine_stats_form",
@@ -124,3 +170,19 @@ list_of_functionalities = [
     "underlying_conditions",
     "no_action",
 ]
+
+
+functionality_proposal = {
+    "covid_statistics_form": "Θα ήθελες να μάθεις για τα κρούσματα; Έχω πληροφορίες για την Ελλάδα και τον υπόλοιπο κόσμο.",
+    "pharmacy_form": "Γνωρίζω και πληροφορίες για φαρμακεία! Μήπως θέλεις να σου βρω κάποιο;",
+    "ill_questionnaire_form": "Μήπως θα ήθελες να σου κάνω κάποιες ερωτήσεις εν είδει διαγνωστικού τεστ; Μην ξεχνάς ότι δεν είμαι γιατρός όμως!",
+    "ways_of_protection": "Θέλεις να σε ενημερώσω σχετικά με τα μέτρα πρόληψης;",
+    "test_cost": "Θα ήθελες να μάθεις πόσο κοστίζουν τα τεστ για τον κορωνοϊό;",
+    "test_types": "Θα ήθελες να μάθεις ποια είναι τα διαφορετικά είδη των τεστ;",
+    "what_to_do_if_positive": "Θέλεις να σου πω τι πρέπει να κάνεις σε περίπτωση που είσαι φορέας;",
+    "underlying_conditions": "Γνωρίζω και σχετικά με τα υποκείμενα νοσήματα, αν σε ενδιαφέρει να μάθεις.",
+    "symptoms": "Να σου πω ποια είναι τα κύρια συμπτώματα του κορωνοϊού;",
+    "vaccine_stats_form": "Θέλεις να μάθεις για την εξέλιξη των εμβολιασμών στην Ελλάδα;",
+    "icu_stats_form": "Ξέρω και για τις ΜΕΘ. Θέλεις να μάθεις για τη διαθεσιμότητα που υπάρχει;",
+    "no_action": "Τα έχουμε πει όλα.",  # Or sth similar
+}

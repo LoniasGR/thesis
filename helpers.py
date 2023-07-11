@@ -40,35 +40,34 @@ def get_actions(data):
 
 
 def remove_useless_intents(intents):
+    clean_intents = list()
+    for i in intents:
+        if "+" in i:
+            clean_intents += i.split("+")
+        clean_intents.append(i)
     return list(
         set(
             [
                 x
-                for x in intents
+                for x in clean_intents
                 if x
                 not in [
                     "time_declare",
-                    "stop_executing",
-                    "region_declare",
-                    "no_action",
+                    "insult",
                     "affirmative",
                     "negative",
-                    "greetings",
-                    "ask_chitchat",
-                    "out_of_scope",
-                    "insult",
+                    "greetings",  # maybe tell we haven't greeted ourselves
+                    "stop_executing",
+                    "region_declare",
                     "goodbye",
                     "thank_you",
                     "didnt_understand",
-                    "whats_your_name",
+                    "all_of_them",
+                    "out_of_scope",
                     "positive_feedback",
-                    "sorry",
-                    "what_is_athena",
-                    "what_is_ilsp",
-                    "greetings+whats_your_name",
-                    "what_is_ilsp+what_is_athena",
-                    "why_theano",
                     "may_i_ask",
+                    "sorry",
+                    "no_action",
                 ]
             ]
         )
@@ -78,4 +77,3 @@ def remove_useless_intents(intents):
 def get_unique_functionalities():
     functionalities = intent_to_functionality_dict.values()
     return sorted(list(set(functionalities)))
-

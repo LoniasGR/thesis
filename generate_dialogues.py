@@ -6,6 +6,8 @@ from mappings import (
     intent_to_functionality_dict,
     limited_intent_to_functionality_dict,
     list_of_functionalities,
+    limited_intent_to_dialogue_dict,
+    functionality_proposal,
 )
 from helpers import remove_useless_intents, get_unique_functionalities
 
@@ -29,11 +31,14 @@ def generate_dialogue():
     return user
 
 
-def present_dialogue(dialogue):
+def present_dialogue(dialogue, verbose=False):
     for utt in dialogue:
-        print(
-            f"User asked: {utt} with functionality {limited_intent_to_functionality_dict[utt]}"
-        )
+        if not verbose:
+            print(f"User: {limited_intent_to_dialogue_dict[utt]}")
+        else:
+            print(
+                f"User: {limited_intent_to_dialogue_dict[utt]}. [intent: {utt}, functionality:{limited_intent_to_functionality_dict[utt]}]"
+            )
 
 
 def get_remaining_suggestions(previous_intents, previous_slot_values=[]):
@@ -56,6 +61,10 @@ def generate_suggestion(previous_intents, previous_slot_values=[]):
         previous_intents, previous_slot_values
     )
     return random.choice(remaining_suggestions)
+
+
+def present_suggestion(suggestion):
+    print(f"THEANO suggests: {functionality_proposal[suggestion]}")
 
 
 def get_user_input():
@@ -106,7 +115,7 @@ def main():
         present_dialogue(dialogue)
         # create suggestion
         suggestion = generate_suggestion(dialogue)
-        print(f"Bot suggests: {suggestion}")
+        present_suggestion(suggestion)
         # ask for user feedback
         resp = get_user_input()
         # record user feedback as example
