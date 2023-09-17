@@ -1,6 +1,10 @@
 import json
 import math
-from helpers import get_actions, remove_useless_intents, get_unique_functionalities
+from mock_dialogues_service.helpers import (
+    get_actions,
+    remove_useless_intents,
+    get_unique_functionalities,
+)
 
 
 def create_vw_data(filename, lines, debug_file, all_data_file):

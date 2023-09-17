@@ -87,7 +87,6 @@ limited_intent_to_functionality_dict = {
     "rapid_test_cost": "test_cost",
     "all_test_cost": "test_cost",
     "self_test": "no_action",
-    "all_of_them": "no_action",
     "test_types": "test_types",
     "general_knowledge_tests": "no_action",
     "out_of_scope": "no_action",
@@ -111,7 +110,7 @@ limited_intent_to_functionality_dict = {
 
 limited_intent_to_dialogue_dict = {
     "covid_stats": "Θα ήθελα να μάθω για τα κρούσματα",
-    "EODY_faq": "",
+    "EODY_faq": "Τι είναι ο ΕΟΔΥ;",
     "ask_chitchat": "Τι κάνεις;",
     "mask_faq": "Πώς φοράμε την μάσκα;",
     "vaccines": "Τι γίνεται με τα εμβόλια;",
@@ -121,7 +120,7 @@ limited_intent_to_dialogue_dict = {
     "thank_you": "Ευχαριστώ",
     "didnt_understand": "Δεν κατάλαβα",
     "am_i_ill": "Μήπως έχω COVID-19;",
-    "why_avoid_pharma": "no_action",
+    "why_avoid_pharma": "Γιατί να αποφύγω τα φαρμακεία αν έχω COVID;",
     "what_to_do_if_positive": "Τι να κάνω αν είμαι θετικός;",
     "symptoms": "Ποιά είναι τα συμπτώματα του COVID-19",
     "whats_your_name": "Πώς σε λένε;",

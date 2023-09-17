@@ -41,6 +41,13 @@ def present_dialogue(dialogue, verbose=False):
             )
 
 
+def create_user_utterances(dialogue):
+    utterances = list()
+    for utt in dialogue:
+        utterances.append(f"{limited_intent_to_dialogue_dict[utt]}")
+    return utterances
+
+
 def get_remaining_suggestions(previous_intents, previous_slot_values=[]):
     # Map previous intents to functionalities
     previous_functionalities_from_intents = [
@@ -64,7 +71,7 @@ def generate_suggestion(previous_intents, previous_slot_values=[]):
 
 
 def present_suggestion(suggestion):
-    print(f"THEANO suggests: {functionality_proposal[suggestion]}")
+    return f"{functionality_proposal[suggestion]}"
 
 
 def get_user_input():
@@ -115,7 +122,7 @@ def main():
         present_dialogue(dialogue)
         # create suggestion
         suggestion = generate_suggestion(dialogue)
-        present_suggestion(suggestion)
+        print(f"THEANO suggests: {present_suggestion(suggestion)}")
         # ask for user feedback
         resp = get_user_input()
         # record user feedback as example
