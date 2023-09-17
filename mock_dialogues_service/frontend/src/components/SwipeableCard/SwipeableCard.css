@@ -1,0 +1,15 @@
+.swipe {
+    position: absolute;
+    min-height: 20rem;
+}
+
+.swipableCardsButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15rem;
+}
+
+.hidden {
+  display: none;
+}
