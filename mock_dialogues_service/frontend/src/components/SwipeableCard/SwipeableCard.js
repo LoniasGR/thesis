@@ -1,5 +1,6 @@
 import React, { useCallback, forwardRef, useState } from 'react'
 import TinderCard from 'react-tinder-card';
+import { EVALUATE_URL } from '../../utils/urls';
 
 import './SwipeableCard.css';
 
@@ -12,7 +13,7 @@ const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe },
   const handleResponse = useCallback(
     (isRelevant) => {
       const data = { user: user_intents, suggestion: suggestion_intent, answer: isRelevant };
-      fetch('http://localhost:8000/evaluate', {
+      fetch(EVALUATE_URL, {
         method: "POST",
         body: JSON.stringify(data),
         mode: 'cors',

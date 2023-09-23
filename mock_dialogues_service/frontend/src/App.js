@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import './App.css';
 import SwipeableCard from './components/SwipeableCard/SwipeableCard';
+import { GENERATE_URL } from './utils/urls';
+import './App.css';
+import Loader from './components/Loader/Loader';
 
 
 const App = () => {
@@ -28,9 +30,10 @@ const App = () => {
 
 
   const fetchData = () => {
-    fetch('https://8000.code.lavdelas.me/generate', {
+    fetch(GENERATE_URL, {
       method: "GET",
-      mode: "cors",
+      mode: "no-cors",
+      redirect: 'follow',
     })
     .then(response => response.json())
     .then(data => {
@@ -82,6 +85,7 @@ const App = () => {
       {!loading && (
         <>
           <h1>Αξιολόγηση Προτάσεων</h1>
+          {loading && <Loader />}
           {dialogues.map((dialogue, index) => (
             <>
           <SwipeableCard
