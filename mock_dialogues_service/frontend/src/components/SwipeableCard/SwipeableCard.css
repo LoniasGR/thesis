@@ -1,13 +1,61 @@
+
+.evaluation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 0 20vw;
+  width: 50vw;
+}
+
+
+
 .swipe {
     position: absolute;
-    min-height: 20rem;
+    min-height: 30rem;
+    min-width: 20rem;
 }
 
 .swipableCardsButtons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 15rem;
+  justify-content: space-around;
+  margin: 2rem auto;
 }
 
 .hidden {

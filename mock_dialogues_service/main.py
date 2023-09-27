@@ -1,3 +1,4 @@
+import uuid
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -43,10 +44,11 @@ def generate(dialogues: int = 3):
         suggestion = generate_suggestion(user)
         sugg_utt = present_suggestion(suggestion)
         d_data = {
-        "user": utts,
-        "user_intents": user,
-        "suggestions": sugg_utt,
-        "suggestion_intent": suggestion,
+            "uid": uuid.uuid4(),
+            "user": utts,
+            "user_intents": user,
+            "suggestions": sugg_utt,
+            "suggestion_intent": suggestion,
         }
         ret_data.append(d_data)
     return ret_data

@@ -4,9 +4,8 @@ import { EVALUATE_URL } from '../../utils/urls';
 
 import './SwipeableCard.css';
 
-
 const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe }, ref) {
-  const {user, user_intents, suggestions, suggestion_intent } = dialogueData;
+  const { user, user_intents, suggestions, suggestion_intent } = dialogueData;
   const [hidden, setHidden] = useState(false);
   const hide = hidden ? 'hidden' : '';
 
@@ -28,16 +27,22 @@ const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe },
     [user_intents, suggestion_intent],
   );
 
-  
+  const handleOnCardLeftScreen = (dir) => {
+    setHidden(true);
+    const relevant = dir === "right" ? true : false;
+    handleResponse(relevant);
+  }
+
+
   return (
-    <TinderCard 
-      className={`card swipe ${hide}`} 
-      ref={ref} 
-      onCardLeftScreen={() => setHidden(true)}
+    <TinderCard
+      className={`card swipe ${hide}`}
+      ref={ref}
+      onCardLeftScreen={handleOnCardLeftScreen}
     >
       <ul>
         {user.map((item, index) => (
-          <li key={index}><span className="bold">User said:</span> {item}</li>
+          <li key={item}><span className="bold">User said:</span> {item}</li>
         ))}
       </ul>
 
@@ -46,10 +51,10 @@ const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe },
       <div>
         <p className='bold'>Was the suggestion useful?</p>
         <div className='swipableCardsButtons'>
-          <button onClick={() => { handleResponse(false); swipe("left"); }}>
+          <button onClick={() => swipe("left")}>
             No
           </button>
-          <button onClick={() => { handleResponse(true); swipe("right");  }}>
+          <button onClick={() => swipe("right")}>
             Yes
           </button>
         </div>
