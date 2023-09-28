@@ -88,21 +88,20 @@ def record_feedback(
     dialogue, suggestion, resp, previous_slot_values=[], filename="rl_hf.dat"
 ):
     unique_actions = get_unique_functionalities()
-    with open(filename, "a") as out_file:
-        remaining_suggestions = get_remaining_suggestions(
-            dialogue, previous_slot_values
-        )
-        probability = 1.0 / (len(remaining_suggestions) + 1)
-        context = remove_useless_intents(dialogue + previous_slot_values)
+    remaining_suggestions = get_remaining_suggestions(dialogue, previous_slot_values)
 
-        out_file.write(f"shared |{' '.join(map(str, context))}\n")
-        out_file.write(
-            f"{unique_actions.index(suggestion)}:{float(resp)}:{probability} |{suggestion}\n"
-        )
-        for sug in remaining_suggestions:
-            if sug != suggestion:
-                out_file.write(f"|{sug}\n")
-        out_file.write("\n")
+    probability = 1.0 / (len(remaining_suggestions) + 1)
+    context = remove_useless_intents(dialogue + previous_slot_values)
+
+    buffer = f"shared |{' '.join(map(str, context))}\n"
+    buffer += f"{unique_actions.index(suggestion)}:{float(resp)}:{probability} |{suggestion}\n"
+    for sug in remaining_suggestions:
+        if sug != suggestion:
+            buffer += f"|{sug}\n"
+    buffer += "\n"
+
+    with open(filename, "a") as out_file:
+        out_file.write(buffer)
 
 
 def gracefully_exit(signum, frame):

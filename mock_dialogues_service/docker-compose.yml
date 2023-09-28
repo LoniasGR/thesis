@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  fastapi:
+    image: mock-dialogues-service
+    build: .
+    container_name: mock-dialogues-service
+    ports:
+      - 9000:80
+    volumes:
+      - ./rl_hf.dat:/code/app/rl_hf.dat
+    restart: unless-stopped
