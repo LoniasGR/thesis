@@ -4,12 +4,15 @@ import { GENERATE_URL } from './utils/urls';
 import './App.css';
 import Loader from './components/Loader/Loader';
 import ArrowSVG from './components/ArrowSVG/ArrowSVG';
+import Overlay from './components/Overlay/Overlay';
 
 
 const App = () => {
   const [dialogues, setDialogues] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showOverlay, setShowOverlay] = useState(true);
+
   const childRefs = React.useRef(null);
 
   function getRefs() {
@@ -37,8 +40,12 @@ const App = () => {
 
   const swipe = useCallback(async (dir) => {
     const refs = getRefs();
-    console.log(refs, currentIndex);
+    console.log("Swiped", refs, currentIndex);
     await refs[currentIndex].swipe(dir) // Swipe the card!
+  }, [currentIndex]);
+
+  const onSwipe = useCallback((dir) => {
+    console.log("On swipe called", currentIndex);
     updateCurrentIndex(currentIndex - 1);
   }, [currentIndex]);
 
@@ -66,6 +73,10 @@ const App = () => {
     if (event.key === 'ArrowLeft') {
       swipe('left');
     }
+
+    if (event.key === 'Escape') {
+      setShowOverlay(false);
+    }
   }, [swipe]);
 
 
@@ -88,8 +99,10 @@ const App = () => {
 
   useEffect(() => {
     if (currentIndex === -1) {
+      console.log("refreshing")
       setLoading(true);
       fetchData();
+      setTimeout(1000);
       setLoading(false);
       setCurrentIndex(dialogues.length - 1);
     }
@@ -97,9 +110,10 @@ const App = () => {
 
   return (
     <>
+      <Overlay showOverlay={showOverlay} setShowOverlay={setShowOverlay} />
       <h1>Αξιολόγηση Προτάσεων</h1>
       <p className='legend'>
-        <ArrowSVG /> Όχι, <ArrowSVG right /> Ναι </p>
+        <ArrowSVG /> Όχι <ArrowSVG right /> Ναι </p>
       <main>
         {loading ? <Loader /> :
           dialogues.map((dialogue, i) => (
@@ -108,6 +122,7 @@ const App = () => {
               key={dialogue.uid}
               dialogueData={dialogue}
               swipe={swipe}
+              onSwipe={onSwipe}
             />
           ))}
       </main>

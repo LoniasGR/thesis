@@ -4,6 +4,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
   padding:0;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1 {
   text-align: center;
 }
@@ -21,4 +26,10 @@ li {
 .legend {
   text-align: center;
   margin: 2rem auto;  
+}
+
+main {
+  margin: auto;
+  width: 100vw;
+  padding: auto;
 }

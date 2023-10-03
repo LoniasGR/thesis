@@ -4,7 +4,7 @@ import { EVALUATE_URL } from '../../utils/urls';
 
 import './SwipeableCard.css';
 
-const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe }, ref) {
+const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, onSwipe, swipe }, ref) {
   const { user, user_intents, suggestions, suggestion_intent } = dialogueData;
   const [hidden, setHidden] = useState(false);
   const hide = hidden ? 'hidden' : '';
@@ -39,17 +39,20 @@ const SwipeableCard = forwardRef(function SwipeableCard({ dialogueData, swipe },
       className={`card swipe ${hide}`}
       ref={ref}
       onCardLeftScreen={handleOnCardLeftScreen}
+      preventSwipe={["up", "down"]}
+      onSwipe={onSwipe}
+      swipeRequirementType='position'
     >
       <ul>
         {user.map((item, index) => (
-          <li key={item}><span className="bold">User said:</span> {item}</li>
+          <li key={item}><span className="bold">Ο χρήστης ρωτάει:</span> {item}</li>
         ))}
       </ul>
 
-      <p><span className='bold'>THEANO suggests: </span>{suggestions}</p>
+      <p className='prompt'><span className='bold'>Η ΘΕΑΝΩ προτείνει: </span>{suggestions}</p>
 
       <div>
-        <p className='bold'>Was the suggestion useful?</p>
+        <p className='bold prompt'>Ήταν η πρόταση σχετική/χρήσιμη;</p>
         <div className='swipableCardsButtons'>
           <button onClick={() => swipe("left")}>
             No

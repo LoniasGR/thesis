@@ -1,0 +1,19 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(9, 1, 1, 0.9);
+  z-index: 9; 
+}
+.overlay-inside {
+  margin: 10vw auto;
+  width: 80vw;
+}
+.overlay-text {
+  color: white;
+  z-index: 10;
+  text-align: justify;
+  margin-bottom: 3vh;
+}

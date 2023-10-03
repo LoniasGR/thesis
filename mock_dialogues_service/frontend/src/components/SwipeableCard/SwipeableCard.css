@@ -35,18 +35,19 @@ button:hover {
 
 .card {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin: 0 20vw;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto; 
   width: 50vw;
+  position: absolute;
 }
 
-
-
 .swipe {
-    position: absolute;
     min-height: 30rem;
     min-width: 20rem;
 }
@@ -60,4 +61,8 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.prompt {
+  margin-top: 2vh;
 }
