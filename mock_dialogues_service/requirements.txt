@@ -1,3 +1,4 @@
 vowpalwabbit
 fastapi
 uvicorn[standard]
+sqlalchemy

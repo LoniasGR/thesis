@@ -1,10 +1,12 @@
 import uuid
-from fastapi import FastAPI
+import uvicorn
+from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.exceptions import HTTPException
+from sqlalchemy.orm import Session
 
-from models import Evaluation
+from schemas import Evaluation
 from generate_dialogues import (
     generate_dialogue,
     create_user_utterances,
@@ -12,8 +14,23 @@ from generate_dialogues import (
     present_suggestion,
     record_feedback,
 )
+from database import SessionLocal, engine
+import crud, models, schemas
+from  logger import CustomLogger
+
+
+models.Base.metadata.create_all(bind=engine)
+logger: CustomLogger = CustomLogger(__name__)
 
 app = FastAPI()
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 app.add_middleware(
     CORSMiddleware,
@@ -36,7 +53,7 @@ class SPAStaticFiles(StaticFiles):
 
 
 @app.get("/generate")
-def generate(dialogues: int = 3):
+def generate(dialogues: int = 3, db: Session = Depends(get_db)):
     ret_data = list()
     for d in range(dialogues):
         user = generate_dialogue()
@@ -55,8 +72,14 @@ def generate(dialogues: int = 3):
 
 
 @app.post("/evaluate")
-def evaluate(ev: Evaluation):
+def evaluate(ev: Evaluation, request: Request):
+    logger.debug(request)
+    client_host = request.client.host
+    print(client_host)
     record_feedback(ev.user, ev.suggestion, ev.answer)
 
 
 app.mount("/", SPAStaticFiles(directory="frontend/build", html=True), name="app")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
