@@ -16,13 +16,14 @@ from generate_dialogues import (
 )
 from database import SessionLocal, engine
 import crud, models, schemas
-from  logger import CustomLogger
+from logger import CustomLogger
 
 
 models.Base.metadata.create_all(bind=engine)
 logger: CustomLogger = CustomLogger(__name__)
 
 app = FastAPI()
+
 
 # Dependency
 def get_db():
@@ -31,6 +32,7 @@ def get_db():
         yield db
     finally:
         db.close()
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -53,13 +55,35 @@ class SPAStaticFiles(StaticFiles):
 
 
 @app.get("/generate")
-def generate(dialogues: int = 3, db: Session = Depends(get_db)):
+def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)):
+    client = crud.create_or_get_client(db, host=request.client.host)
+
     ret_data = list()
     for d in range(dialogues):
         user = generate_dialogue()
         utts = create_user_utterances(user)
+
+        uttsDB = list()
+        # Save the utterance if it doesn't exist already
+        for dial, utt in zip(user, utts):
+            uttsDB.append(
+                crud.create_or_get_user_dialogue(
+                    db, schemas.UserUtterance(intent=dial, description=utt)
+                )
+            )
+
         suggestion = generate_suggestion(user)
         sugg_utt = present_suggestion(suggestion)
+
+        eval = schemas.Evaluation(
+            client=client,
+            user=uttsDB,
+            suggestion=suggestion,
+            uuid=str(uuid.uuid4()),
+            answer=None,
+        )
+        crud.create_evaluation(db, eval)
+
         d_data = {
             "uid": uuid.uuid4(),
             "user": utts,
@@ -72,10 +96,12 @@ def generate(dialogues: int = 3, db: Session = Depends(get_db)):
 
 
 @app.post("/evaluate")
-def evaluate(ev: Evaluation, request: Request):
-    logger.debug(request)
-    client_host = request.client.host
-    print(client_host)
+def evaluate(ev: Evaluation, request: Request, db: Session = Depends(get_db)):
+    client = crud.create_or_get_client(db, schemas.Client(host=request.client.host))
+    intents = crud.get_user_dialogues_by_intent_list(db, ev.user)
+
+    db_ev = models.EvaluationDB()
+
     record_feedback(ev.user, ev.suggestion, ev.answer)
 
 
