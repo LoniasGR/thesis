@@ -1,10 +1,32 @@
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-  margin:0;
-  padding:0;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden;
 }
@@ -25,11 +47,53 @@ li {
 
 .legend {
   text-align: center;
-  margin: 2rem auto;  
+  margin: 2rem auto;
 }
 
 main {
   margin: auto;
   width: 100vw;
   padding: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 5vh;
+  margin: auto;
+  width: 80vw;
+  padding: 0 10vw;
+}
+
+.swipableCardsButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem auto;
 }
