@@ -18,12 +18,15 @@ class UserUtterance(BaseModel):
         from_attributes = True
 
 
-class Evaluation(BaseModel):
+class EvaluationBase(BaseModel):
     uuid: str | None
-    user: list[str] | list[UserUtterance]
-    suggestion: str
     answer: bool | None
-    client: Client | None
 
     class Config:
         from_attributes = True
+
+
+class Evaluation(EvaluationBase):
+    user: list[str] | list[UserUtterance]
+    suggestion: str
+    client: Client | None

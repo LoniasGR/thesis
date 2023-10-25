@@ -14,13 +14,16 @@ from typing import List
 from database import Base
 
 
-evaluation_user_dialogue_table = Table(
-    "evaluation_user_dialogue_table",
-    Base.metadata,
-    Column("evaluation_id", ForeignKey("evaluations.uuid"), primary_key=True),
-    Column("user_dialogue_id", ForeignKey("user_dialogues.id"), primary_key=True),
-    Column("order", Integer),
-)
+class EvaluationDialoguesDB(Base):
+    __tablename__ = "evaluation_user_dialogue_table"
+    evaluation_id: Mapped[str] = mapped_column(
+        ForeignKey("evaluations.uuid"), primary_key=True
+    )
+    user_dialogue_id: Mapped[int] = mapped_column(
+        ForeignKey("user_dialogues.id"), primary_key=True
+    )
+    order: Mapped[int] = mapped_column(nullable=False)
+    user_dialogue: Mapped[UserDialogueDB] = relationship()
 
 
 class EvaluationDB(Base):
@@ -33,9 +36,7 @@ class EvaluationDB(Base):
     date_answered: Mapped[datetime] = mapped_column(nullable=True)
     client_id: Mapped[int] = mapped_column(ForeignKey("clients.id"))
     client: Mapped[ClientDB] = relationship(back_populates="evaluations")
-    user_prompts: Mapped[List[UserDialogueDB]] = relationship(
-        secondary=evaluation_user_dialogue_table
-    )
+    user_prompts: Mapped[List[EvaluationDialoguesDB]] = relationship()
 
 
 class ClientDB(Base):

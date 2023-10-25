@@ -1,43 +1,65 @@
-import uuid
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
+import sqlalchemy.sql.functions as func
 
 import models, schemas
 
 
 def get_all(clazz: type, db: Session, skip: int = 0, limit: int = 100):
-    return db.execute(select(clazz).offset(skip).limit(100)).all()
+    return db.scalars(select(clazz).offset(skip).limit(100)).all()
 
 
 def get_user_dialogue_by_intent(db: Session, intent: str):
-    return db.scalars(
+    return db.scalar(
         select(models.UserDialogueDB).where(models.UserDialogueDB.intent == intent)
-    ).first()
+    )
 
 
 def get_client_by_host(db: Session, host: str):
-    return db.scalars(
-        select(models.ClientDB).where(models.ClientDB.host == host)
-    ).first()
+    return db.scalar(select(models.ClientDB).where(models.ClientDB.host == host))
 
 
 def get_user_dialogues_by_intent_list(db: Session, intents: list[str]):
-    return db.execute(
+    return db.scalars(
         select(models.UserDialogueDB).where(models.UserDialogueDB.intent.in_(intents))
     ).all()
 
 
+def get_evaluation_by_uuid(db: Session, uuid: str) -> models.EvaluationDB | None:
+    return db.scalar(
+        select(models.EvaluationDB).where(models.EvaluationDB.uuid == uuid)
+    )
+
+
+def update_evaluation_answer(db: Session, uuid: str, answer: bool):
+    db_ev = get_evaluation_by_uuid(db, uuid)
+    if db_ev == None:
+        return None
+
+    db_ev.answer = answer
+    db_ev.date_answered = func.now()
+
+    db.commit()
+    db.refresh(db_ev)
+    return db_ev
+
+
 def create_evaluation(db: Session, ev: schemas.Evaluation):
-    prompts = list()
     for pr in ev.user:
-        prompts.append(get_user_dialogue_by_intent(db, pr.intent))
+        r = models.EvaluationDialoguesDB()
 
     db_evaluation = models.EvaluationDB(
         uuid=ev.uuid,
         suggestion=ev.suggestion,
         client_id=ev.client.id,
-        user_prompts=prompts,
     )
+
+    for idx, pr in enumerate(ev.user):
+        r = models.EvaluationDialoguesDB(
+            order=idx,
+            user_dialogue=get_user_dialogue_by_intent(db, pr.intent),
+        )
+        db_evaluation.user_prompts.append(r)
 
     db.add(db_evaluation)
 

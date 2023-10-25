@@ -4,9 +4,16 @@ services:
   fastapi:
     image: mock-dialogues-service
     build: .
+    environment:
+      - UID=${USID}
+      - GID=${GID}
     container_name: mock-dialogues-service
-    ports:
-      - 9000:80
     volumes:
       - ./rl_hf.dat:/code/app/rl_hf.dat
+      - ./sql_app.db:/code/app/sql_app.db
     restart: unless-stopped
+
+networks:
+  default:
+    name: docker_server
+    external: true

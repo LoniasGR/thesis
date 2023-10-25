@@ -1,10 +1,12 @@
 import uuid
 import uvicorn
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
+from helpers import get_all_intents
 
 from schemas import Evaluation
 from generate_dialogues import (
@@ -22,8 +24,6 @@ from logger import CustomLogger
 models.Base.metadata.create_all(bind=engine)
 logger: CustomLogger = CustomLogger(__name__)
 
-app = FastAPI()
-
 
 # Dependency
 def get_db():
@@ -34,6 +34,20 @@ def get_db():
         db.close()
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Here we do stuff when the app starts-up
+    intents = get_all_intents()
+    utts = create_user_utterances(intents)
+    for dial, utt in zip(intents, utts):
+        crud.create_or_get_user_dialogue(
+            next(get_db()), schemas.UserUtterance(intent=dial, description=utt)
+        )
+    yield
+    # Here we do stuff when the app shuts-down
+
+
+app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -61,19 +75,8 @@ def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)
     ret_data = list()
     for d in range(dialogues):
         user = generate_dialogue()
-        utts = create_user_utterances(user)
-
-        uttsDB = list()
-        # Save the utterance if it doesn't exist already
-        for dial, utt in zip(user, utts):
-            uttsDB.append(
-                crud.create_or_get_user_dialogue(
-                    db, schemas.UserUtterance(intent=dial, description=utt)
-                )
-            )
-
+        uttsDB = crud.get_user_dialogues_by_intent_list(db, user)
         suggestion = generate_suggestion(user)
-        sugg_utt = present_suggestion(suggestion)
 
         eval = schemas.Evaluation(
             client=client,
@@ -82,30 +85,25 @@ def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)
             uuid=str(uuid.uuid4()),
             answer=None,
         )
-        crud.create_evaluation(db, eval)
+        eval_db = crud.create_evaluation(db, eval)
 
         d_data = {
-            "uid": uuid.uuid4(),
-            "user": utts,
-            "user_intents": user,
-            "suggestions": sugg_utt,
-            "suggestion_intent": suggestion,
+            "uuid": eval_db.uuid,
+            "user": [p.user_dialogue.description for p in eval_db.user_prompts],
+            "user_intents": [p.user_dialogue.intent for p in eval_db.user_prompts],
+            "suggestions": present_suggestion(eval_db.suggestion),
+            "suggestion_intent": eval_db.suggestion,
         }
         ret_data.append(d_data)
     return ret_data
 
 
 @app.post("/evaluate")
-def evaluate(ev: Evaluation, request: Request, db: Session = Depends(get_db)):
-    client = crud.create_or_get_client(db, schemas.Client(host=request.client.host))
-    intents = crud.get_user_dialogues_by_intent_list(db, ev.user)
-
-    db_ev = models.EvaluationDB()
-
-    record_feedback(ev.user, ev.suggestion, ev.answer)
+def evaluate(ev: schemas.EvaluationBase, db: Session = Depends(get_db)):
+    new_ev = crud.update_evaluation_answer(db, ev.uuid, ev.answer)
+    if new_ev == None:
+        raise HTTPException(status_code=400, detail="Wrong evaluation id")
+    return new_ev
 
 
 app.mount("/", SPAStaticFiles(directory="frontend/build", html=True), name="app")
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
