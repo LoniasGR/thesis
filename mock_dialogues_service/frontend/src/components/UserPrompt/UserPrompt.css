@@ -1,0 +1,15 @@
+.clickable {
+  cursor: pointer;
+}
+.user {
+  margin: 0.5rem;
+  padding: 0.3rem 0.7rem 0;
+}
+.user-open {
+  border: 1px solid #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.reply {
+  padding-top: 1rem;
+}

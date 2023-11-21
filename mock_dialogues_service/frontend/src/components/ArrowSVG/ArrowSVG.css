@@ -1,8 +1,0 @@
-.right {
-    transform: rotate(180deg);
-    margin-left: 1rem;
-}
-
-.left {
-    transform: rotate(0deg);
-}

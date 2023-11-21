@@ -1,0 +1,29 @@
+.legend {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.arrow-left,
+.arrow-right {
+  justify-self: center;
+  display: flex;
+  margin: 0 1rem 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 1.6em;
+  }
+}

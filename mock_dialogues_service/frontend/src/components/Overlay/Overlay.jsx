@@ -4,12 +4,20 @@ import PropTypes from 'prop-types';
 import './Overlay.css';
 
 function Overlay({ setShow }) {
+  React.useEffect(() => {
+    const deactivateOverlay = () => setShow(false);
+    document.addEventListener('keydown', deactivateOverlay);
+
+    return () => {
+      document.removeEventListener('keydown', deactivateOverlay);
+    };
+  });
+
   return (
     <div
       role="presentation"
       className="overlay"
       onClick={() => setShow(false)}
-      onKeyDown={() => setShow(false)}
     >
       <div className="overlay-inside">
         <p className="overlay-text">

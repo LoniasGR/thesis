@@ -4,13 +4,13 @@ import TinderCard from 'react-tinder-card';
 import { EVALUATE_URL } from '../../utils/urls';
 
 import './SwipeableCard.css';
+import UserPrompt from '../UserPrompt/UserPrompt';
 
 const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
   const {
-    uuid, user, user_intents: userIntents, suggestions, suggestion_intent: suggestionIntent,
+    uuid, user, suggestion_utterance: suggestionUtterance,
   } = dialogueData;
   const [hidden, setHidden] = useState(false);
-  const hide = hidden ? 'hidden' : '';
 
   const handleResponse = useCallback(
     (isRelevant) => {
@@ -31,7 +31,7 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
         console.error(err);
       });
     },
-    [userIntents, suggestionIntent],
+    [uuid],
   );
 
   const handleOnCardLeftScreen = (dir) => {
@@ -42,7 +42,7 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
 
   return (
     <TinderCard
-      className={`card swipe ${hide}`}
+      className={`card swipe ${hidden ? 'hidden' : ''}`}
       ref={ref}
       onCardLeftScreen={handleOnCardLeftScreen}
       preventSwipe={['up', 'down']}
@@ -51,16 +51,13 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
     >
       <ul>
         {user.map((item) => (
-          <li key={`${uuid}-${item}`}>
-            <span className="bold">Ο χρήστης ρωτάει: </span>
-            {item}
-          </li>
+          <UserPrompt key={`${uuid}-${item.intent}`} description={item.description} response={item.response} />
         ))}
       </ul>
 
       <p className="prompt">
         <span className="bold">Η ΘΕΑΝΩ προτείνει: </span>
-        {suggestions}
+        {suggestionUtterance}
       </p>
     </TinderCard>
   );
@@ -69,12 +66,15 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
 SwipeableCard.propTypes = {
   dialogueData: PropTypes.shape({
     uuid: PropTypes.string,
-    user: PropTypes.arrayOf(PropTypes.string),
-    user_intents: PropTypes.arrayOf(PropTypes.string),
-    suggestions: PropTypes.string,
-    suggestion_intent: PropTypes.string,
+    user: PropTypes.arrayOf(PropTypes.shape({
+      intent: PropTypes.string,
+      description: PropTypes.string,
+      response: PropTypes.string,
+    })),
+    suggestion: PropTypes.string,
+    suggestion_utterance: PropTypes.string,
   }).isRequired,
   onSwipe: PropTypes.func.isRequired,
 };
-
+SwipeableCard.displayName = 'SwipeableCard';
 export default SwipeableCard;

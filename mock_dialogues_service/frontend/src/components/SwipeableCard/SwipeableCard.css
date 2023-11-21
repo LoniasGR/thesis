@@ -3,7 +3,6 @@
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -17,8 +16,6 @@
   min-width: 20vw;
 }
 
-
-
 .hidden {
   display: none;
 }
@@ -30,5 +27,17 @@
 @media screen and (max-width: 600px) {
   .swipe {
     min-width: 70vw;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: black;
   }
 }

@@ -1,0 +1,24 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 5vh;
+  margin: auto;
+  width: 80vw;
+  padding: 0 10vw;
+}
+
+.swipableCardsButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
