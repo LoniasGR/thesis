@@ -53,3 +53,4 @@ class UserDialogueDB(Base):
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
     description: Mapped[str] = mapped_column(nullable=False)
     intent: Mapped[str] = mapped_column(nullable=False)
+    response: Mapped[str] = mapped_column(nullable=False)

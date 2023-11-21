@@ -1,5 +1,4 @@
 import uuid
-import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -8,13 +7,12 @@ from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
 from helpers import get_all_intents
 
-from schemas import Evaluation
 from generate_dialogues import (
     generate_dialogue,
     create_user_utterances,
     generate_suggestion,
     present_suggestion,
-    record_feedback,
+    create_bot_responses,
 )
 from database import SessionLocal, engine
 import crud, models, schemas
@@ -39,9 +37,11 @@ async def lifespan(app: FastAPI):
     # Here we do stuff when the app starts-up
     intents = get_all_intents()
     utts = create_user_utterances(intents)
-    for dial, utt in zip(intents, utts):
+    responses = create_bot_responses(intents)
+    for dial, utt, resp in zip(intents, utts, responses):
         crud.create_or_get_user_dialogue(
-            next(get_db()), schemas.UserUtterance(intent=dial, description=utt)
+            next(get_db()),
+            schemas.UserUtterance(intent=dial, description=utt, response=resp),
         )
     yield
     # Here we do stuff when the app shuts-down
@@ -68,7 +68,7 @@ class SPAStaticFiles(StaticFiles):
                 raise ex
 
 
-@app.get("/generate")
+@app.get("/generate", response_model=list[schemas.Suggestion])
 def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)):
     client = crud.create_or_get_client(db, host=request.client.host)
 
@@ -86,15 +86,18 @@ def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)
             answer=None,
         )
         eval_db = crud.create_evaluation(db, eval)
-
-        d_data = {
-            "uuid": eval_db.uuid,
-            "user": [p.user_dialogue.description for p in eval_db.user_prompts],
-            "user_intents": [p.user_dialogue.intent for p in eval_db.user_prompts],
-            "suggestions": present_suggestion(eval_db.suggestion),
-            "suggestion_intent": eval_db.suggestion,
-        }
-        ret_data.append(d_data)
+        ret_data.append(
+            schemas.Suggestion(
+                uuid=eval_db.uuid,
+                suggestion=eval_db.suggestion,
+                suggestion_utterance=present_suggestion(eval_db.suggestion),
+                user=[
+                    schemas.UserUtterance(**u.user_dialogue.__dict__)
+                    for u in eval_db.user_prompts
+                ],
+                answer=None,
+            )
+        )
     return ret_data
 
 

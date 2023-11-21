@@ -8,6 +8,7 @@ from mappings import (
     list_of_functionalities,
     limited_intent_to_dialogue_dict,
     functionality_proposal,
+    limited_intent_to_response_dict,
 )
 from helpers import remove_useless_intents, get_unique_functionalities
 
@@ -46,6 +47,13 @@ def create_user_utterances(dialogue):
     for utt in dialogue:
         utterances.append(f"{limited_intent_to_dialogue_dict[utt]}")
     return utterances
+
+
+def create_bot_responses(dialogue):
+    responses = list()
+    for utt in dialogue:
+        responses.append(f"{limited_intent_to_response_dict[utt]}")
+    return responses
 
 
 def get_remaining_suggestions(previous_intents, previous_slot_values=[]):

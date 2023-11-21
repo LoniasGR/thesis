@@ -1,9 +1,12 @@
-from mappings import intent_to_functionality_dict, list_of_functionalities, limited_intent_to_functionality_dict
+from mappings import (
+    intent_to_functionality_dict,
+    list_of_functionalities,
+    limited_intent_to_functionality_dict,
+)
 
 
 def get_all_intents():
     return list(limited_intent_to_functionality_dict.keys())
-
 
 
 def get_actions(data):

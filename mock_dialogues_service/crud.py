@@ -44,7 +44,7 @@ def update_evaluation_answer(db: Session, uuid: str, answer: bool):
     return db_ev
 
 
-def create_evaluation(db: Session, ev: schemas.Evaluation):
+def create_evaluation(db: Session, ev: schemas.Evaluation) -> models.EvaluationDB:
     for pr in ev.user:
         r = models.EvaluationDialoguesDB()
 
@@ -70,7 +70,7 @@ def create_evaluation(db: Session, ev: schemas.Evaluation):
 
 def create_user_dialogue(db: Session, usr: schemas.UserUtterance):
     db_user_dialogue = models.UserDialogueDB(
-        description=usr.description, intent=usr.intent
+        description=usr.description, intent=usr.intent, response=usr.response
     )
     db.add(db_user_dialogue)
     db.commit()
