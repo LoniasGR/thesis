@@ -7,10 +7,11 @@ services:
     environment:
       - UID=${USID}
       - GID=${GID}
+      - DB_URL=sqlite:///./production.db
     container_name: mock-dialogues-service
     volumes:
       - ./rl_hf.dat:/code/app/rl_hf.dat
-      - ./sql_app.db:/code/app/sql_app.db
+      - ./production.db:/code/app/production.db
     restart: unless-stopped
 
 networks:
