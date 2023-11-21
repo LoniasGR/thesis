@@ -14,5 +14,5 @@ popd
 
 docker compose build
 
-touch sql_app.db
+touch production.db
 docker compose up -d
