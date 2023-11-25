@@ -42,23 +42,25 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
 
   return (
     <TinderCard
-      className={`card swipe ${hidden ? 'hidden' : ''}`}
+      className={`swipe ${hidden ? 'hidden' : ''}`}
       ref={ref}
       onCardLeftScreen={handleOnCardLeftScreen}
       preventSwipe={['up', 'down']}
       onSwipe={onSwipe}
       swipeRequirementType="position"
     >
-      <ul>
-        {user.map((item) => (
-          <UserPrompt key={`${uuid}-${item.intent}`} description={item.description} response={item.response} />
-        ))}
-      </ul>
+      <div className="card">
+        <ul>
+          {user.map((item) => (
+            <UserPrompt key={`${uuid}-${item.intent}`} description={item.description} response={item.response} />
+          ))}
+        </ul>
 
-      <p className="prompt">
-        <span className="bold">Η ΘΕΑΝΩ προτείνει: </span>
-        {suggestionUtterance}
-      </p>
+        <p className="prompt">
+          <span className="bold">Η ΘΕΑΝΩ προτείνει: </span>
+          {suggestionUtterance}
+        </p>
+      </div>
     </TinderCard>
   );
 });

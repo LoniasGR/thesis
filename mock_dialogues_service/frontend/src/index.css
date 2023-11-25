@@ -34,11 +34,12 @@ li {
   padding-bottom: 0.2rem;
 }
 
-main {
-  margin: auto;
+#root {
+  overflow: hidden;
+  min-height: 100vh;
   width: 100vw;
-  padding: auto;
-  overflow-y: hidden;
+  justify-content: center;
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {

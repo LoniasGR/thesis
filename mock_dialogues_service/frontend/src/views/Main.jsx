@@ -34,21 +34,17 @@ function Main() {
     }
   }
 
-  const updateCurrentIndex = React.useCallback((val) => {
-    setCurrentIndex(val);
-  }, []);
+  const onSwipe = () => {
+    setCurrentIndex(currentIndex - 1);
+  };
 
   const swipe = React.useCallback(async (dir) => {
     const refs = getRefs();
     await refs[currentIndex].swipe(dir); // Swipe the card!
   }, [currentIndex]);
 
-  const onSwipe = React.useCallback(() => {
-    updateCurrentIndex(currentIndex - 1);
-  }, [updateCurrentIndex, currentIndex]);
-
   const { data: dialogues, error, loading } = useFetch(
-    `${GENERATE_URL}?dialogues=5`,
+    `${GENERATE_URL}?dialogues=1`,
     {
       method: 'GET',
       mode: 'cors',
@@ -59,15 +55,15 @@ function Main() {
 
   React.useEffect(() => {
     if (!loading) {
-      updateCurrentIndex(dialogues.length - 1);
+      setCurrentIndex(dialogues.length - 1);
     }
-  }, [loading, dialogues, updateCurrentIndex]);
+  }, [loading, dialogues]);
 
   React.useEffect(() => {
     if (currentIndex === -1) {
-      setBatch(batch + 1);
+      setBatch((prevState) => prevState + 1);
     }
-  }, [batch, currentIndex]);
+  }, [currentIndex]);
 
   React.useEffect(() => {
     const handleArrowPress = (event) => {
@@ -91,49 +87,47 @@ function Main() {
   });
 
   return (
-    <>
+    <main className="main-content">
       {showOverlay ? <Overlay setShow={setShowOverlay} /> : null}
       <Header />
-      <main>
-        {error ? <p>{error}</p> : null}
-        <section>
-          {loading ? <Loader />
-            : (
-              dialogues?.map((dialogue, i) => (
-                <SwipeableCard
-                  ref={(el) => setRefs(el, i)}
-                  key={dialogue.uuid}
-                  dialogueData={dialogue}
-                  swipe={swipe}
-                  onSwipe={onSwipe}
-                />
-              ))
-            )}
-        </section>
-        {!error
+      {error ? <p>{error}</p> : null}
+      <section className="card-section">
+        {loading ? <Loader />
+          : (
+            dialogues?.map((dialogue, i) => (
+              <SwipeableCard
+                ref={(el) => setRefs(el, i)}
+                key={dialogue.uuid}
+                dialogueData={dialogue}
+                swipe={swipe}
+                onSwipe={onSwipe}
+              />
+            ))
+          )}
+      </section>
+      {!error
         && (
         <div className="bottom">
           <p className="bold">Ήταν η πρόταση σχετική/χρήσιμη;</p>
-          <div className="swipableCardsButtons">
+          <div className="swipable-cards-buttons">
             <Button
               type="button"
               variant="contained"
-              onClick={(e) => swipe(e, 'left')}
+              onClick={() => swipe('left')}
             >
               ΟΧΙ
             </Button>
             <Button
               variant="contained"
               type="button"
-              onClick={(e) => swipe(e, 'right')}
+              onClick={() => swipe('right')}
             >
               ΝΑΙ
             </Button>
           </div>
         </div>
         )}
-      </main>
-    </>
+    </main>
   );
 }
 
