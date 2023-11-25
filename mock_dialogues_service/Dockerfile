@@ -7,7 +7,7 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY *.py /code/app/
-COPY ./frontend/dist /code/app/frontend/build
+COPY ./frontend/dist /code/app/frontend/dist
 
 EXPOSE 80
 
