@@ -109,4 +109,4 @@ def evaluate(ev: schemas.EvaluationBase, db: Session = Depends(get_db)):
     return new_ev
 
 
-app.mount("/", SPAStaticFiles(directory="frontend/build", html=True), name="app")
+app.mount("/", SPAStaticFiles(directory="frontend/dist", html=True), name="app")
