@@ -1,15 +1,32 @@
 .clickable {
   cursor: pointer;
+  display: flex;
 }
+
+.rotated {
+  transform: rotate(90deg);
+}
+
 .user {
   margin: 0.5rem;
   padding: 0.3rem 0.7rem 0;
 }
+
+.user-question {
+  padding-right: 2px;
+}
+
 .user-open {
-  border: 1px solid #000;
-  transition: all 0.5s ease-in-out;
+  border: 1px solid #ffffff;
+  transition: all 1s ease-in-out;
 }
 
 .reply {
-  padding-top: 1rem;
+  padding: 1rem 1rem 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .user .bold {
+    color: #0092cc;
+  }
 }

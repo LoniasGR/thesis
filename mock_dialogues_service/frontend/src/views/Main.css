@@ -8,19 +8,6 @@
   font-weight: bold;
 }
 
-.bottom {
-  margin: auto;
-  width: 80vw;
-  padding: 0 10vw;
-}
-
-.swipableCardsButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 2rem auto;
-}
-
 .main-content {
   display: flex;
   flex-direction: column;

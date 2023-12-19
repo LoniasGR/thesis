@@ -1,4 +1,6 @@
-import React, { useCallback, forwardRef, useState } from 'react';
+import {
+  useCallback, forwardRef, useState, useRef, useLayoutEffect,
+} from 'react';
 import PropTypes from 'prop-types';
 import TinderCard from 'react-tinder-card';
 import { EVALUATE_URL } from '../../utils/urls';
@@ -7,6 +9,7 @@ import './SwipeableCard.css';
 import UserPrompt from '../UserPrompt/UserPrompt';
 
 const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
+  const scrollRef = useRef();
   const {
     uuid, user, suggestion_utterance: suggestionUtterance,
   } = dialogueData;
@@ -40,16 +43,59 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
     handleResponse(relevant);
   };
 
+  useLayoutEffect(() => {
+    let touchPosX;
+    let touchPosY;
+    const currentRef = scrollRef.current;
+    let isPropagating = false;
+
+    const onTouchMove = (e) => {
+      const newTouchPosY = e.changedTouches[0].clientY;
+      const newTouchPosX = e.changedTouches[0].clientX;
+
+      if (Math.abs(newTouchPosX - touchPosX) < 50) {
+        if (!isPropagating) {
+          e.stopPropagation();
+        }
+        e.preventDefault();
+        currentRef.scrollTop -= 0.05 * (newTouchPosY - touchPosY);
+      } else {
+        isPropagating = true;
+      }
+    };
+
+    const onTouchEnd = () => {
+      currentRef.removeEventListener(('touchmove'), onTouchMove);
+      currentRef.removeEventListener(('touchend'), onTouchEnd);
+    };
+
+    const onTouchStart = (e) => {
+      isPropagating = false;
+      e.preventDefault();
+      touchPosY = e.changedTouches[0].clientY;
+      touchPosX = e.changedTouches[0].clientX;
+
+      currentRef.addEventListener(('touchmove'), onTouchMove);
+      currentRef.addEventListener(('touchend'), onTouchEnd);
+    };
+
+    currentRef.addEventListener(('touchstart'), onTouchStart);
+
+    return () => {
+      currentRef.removeEventListener(('touchstart'), onTouchStart);
+    };
+  }, [scrollRef]);
+
   return (
     <TinderCard
-      className={`swipe ${hidden ? 'hidden' : ''}`}
+      className={`pressable swipe ${hidden ? 'hidden' : ''}`}
       ref={ref}
       onCardLeftScreen={handleOnCardLeftScreen}
       preventSwipe={['up', 'down']}
       onSwipe={onSwipe}
       swipeRequirementType="position"
     >
-      <div className="card">
+      <div className="card" ref={scrollRef}>
         <ul>
           {user.map((item) => (
             <UserPrompt key={`${uuid}-${item.intent}`} description={item.description} response={item.response} />

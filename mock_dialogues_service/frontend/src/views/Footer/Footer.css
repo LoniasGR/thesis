@@ -1,0 +1,12 @@
+.swipable-cards-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+
+.bottom {
+    margin: auto;
+    width: 80vw;
+    padding: 0 10vw;
+}

@@ -33,4 +33,8 @@
   .card {
     background-color: black;
   }
+
+  .prompt .bold {
+    color: #0092cc;
+  }
 }
