@@ -2,14 +2,14 @@ import {
   useState, useRef, useCallback, useEffect,
 } from 'react';
 
-import Header from '../components/Header/Header';
-import SwipeableCard from '../components/SwipeableCard/SwipeableCard';
-import { GENERATE_URL } from '../utils/urls';
+import Header from '../../components/Header/Header';
+import SwipeableCard from '../../components/SwipeableCard/SwipeableCard';
+import { GENERATE_URL } from '../../utils/urls';
 
-import Loader from '../components/Loader/Loader';
-import Overlay from '../components/Overlay/Overlay';
-import useFetch from '../hooks/useFetch';
-import Footer from './Footer/Footer';
+import Loader from '../../components/Loader/Loader';
+import Overlay from '../../components/Overlay/Overlay';
+import useFetch from '../../hooks/useFetch';
+import Footer from '../Footer/Footer';
 
 import './Main.css';
 
