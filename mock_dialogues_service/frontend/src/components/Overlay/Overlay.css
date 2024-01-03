@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background: rgba(9, 1, 1, 0.9);
-  z-index: 9; 
+  z-index: 9;
 }
 .overlay-inside {
   margin: 10vw auto;
@@ -16,4 +16,8 @@
   z-index: 10;
   text-align: justify;
   margin-bottom: 3vh;
+}
+
+.bold {
+  font-weight: bold;
 }
