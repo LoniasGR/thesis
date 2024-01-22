@@ -13,7 +13,7 @@ function Header() {
           Όχι
         </span>
         <span className="arrow-right">
-          Ναί
+          Ναι
           <KeyboardArrowRightTwoToneIcon />
         </span>
       </div>

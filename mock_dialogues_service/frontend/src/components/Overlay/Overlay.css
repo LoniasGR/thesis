@@ -1,23 +1,38 @@
 .overlay {
   position: fixed;
+  display: block;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
   background: rgba(9, 1, 1, 0.9);
-  z-index: 9;
+  z-index: 9999;
+  cursor: pointer;
+  overflow-y: scroll;
 }
 .overlay-inside {
   margin: 10vw auto;
   width: 80vw;
 }
-.overlay-text {
+.overlay-inside p,
+.overlay-inside h1 {
   color: white;
-  z-index: 10;
+  z-index: 9999;
   text-align: justify;
   margin-bottom: 3vh;
 }
 
+.overlay-inside h1 {
+  text-align: center;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.override-prompt {
+  border: white 1px solid;
+  * {
+    color: white !important;
+  }
 }

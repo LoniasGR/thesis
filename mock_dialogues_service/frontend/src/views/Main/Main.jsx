@@ -1,7 +1,9 @@
 import {
   useState, useRef, useCallback, useEffect,
 } from 'react';
+import HelpIcon from '@mui/icons-material/Help';
 
+import { IconButton } from '@mui/material';
 import Header from '../../components/Header/Header';
 import SwipeableCard from '../../components/SwipeableCard/SwipeableCard';
 import { GENERATE_URL } from '../../utils/urls';
@@ -79,9 +81,10 @@ function Main() {
       }
     };
 
+    if (!showOverlay) {
     // Add event listener when the component mounts
-    document.addEventListener('keydown', handleArrowPress);
-
+      document.addEventListener('keydown', handleArrowPress);
+    }
     // Clean up the event listener when the component unmounts
     return () => {
       document.removeEventListener('keydown', handleArrowPress);
@@ -89,29 +92,32 @@ function Main() {
   });
 
   return (
-    <main className="main-content">
-      {showOverlay ? <Overlay setShow={setShowOverlay} /> : null}
-      <Header />
-      {error ? <p>{error}</p> : null}
-      <section className="card-section">
-        {loading ? <Loader />
-          : (
-            dialogues?.map((dialogue, i) => (
-              <SwipeableCard
-                ref={(el) => setRefs(el, i)}
-                key={dialogue.uuid}
-                dialogueData={dialogue}
-                swipe={swipe}
-                onSwipe={onSwipe}
-              />
-            ))
-          )}
-      </section>
-      {!error
+    <>
+      <IconButton className="help-button" onClick={() => setShowOverlay(true)}><HelpIcon /></IconButton>
+      <main className="main-content">
+        {showOverlay ? <Overlay setShow={setShowOverlay} /> : null}
+        <Header />
+        {error ? <p>{error}</p> : null}
+        <section className="card-section">
+          {loading ? <Loader />
+            : (
+              dialogues?.map((dialogue, i) => (
+                <SwipeableCard
+                  ref={(el) => setRefs(el, i)}
+                  key={dialogue.uuid}
+                  dialogueData={dialogue}
+                  swipe={swipe}
+                  onSwipe={onSwipe}
+                />
+              ))
+            )}
+        </section>
+        {!error
         && (
           <Footer swipe={swipe} />
         )}
-    </main>
+      </main>
+    </>
   );
 }
 

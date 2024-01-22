@@ -6,7 +6,7 @@ import './Footer.css';
 function Footer({ swipe }) {
   return (
     <div className="bottom">
-      <p className="bold">Ήταν η πρόταση σχετική/χρήσιμη;</p>
+      <p className="bold">Ήταν η πρόταση σχετική με ολόκληρο τον προηγούμενο διάλογο;</p>
       <div className="swipable-cards-buttons">
         <Button
           type="button"

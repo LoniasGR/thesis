@@ -58,7 +58,7 @@ const SwipeableCard = forwardRef(({ dialogueData, onSwipe }, ref) => {
           e.stopPropagation();
         }
         e.preventDefault();
-        currentRef.scrollTop -= 0.05 * (newTouchPosY - touchPosY);
+        currentRef.scrollTop -= 0.08 * (newTouchPosY - touchPosY);
       } else {
         isPropagating = true;
       }

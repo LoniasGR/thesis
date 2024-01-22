@@ -30,3 +30,12 @@
     color: #0092cc;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .user-question {
+    color: rgb(16, 67, 119);
+  }
+  .reply .bold {
+    color: rgb(119, 100, 16);
+  }
+}

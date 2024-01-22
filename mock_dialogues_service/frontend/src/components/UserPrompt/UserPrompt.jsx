@@ -1,14 +1,29 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import { useLayoutEffect, useState, useRef } from 'react';
+import {
+  useLayoutEffect, useState, useRef, useEffect, React,
+} from 'react';
 import PropTypes from 'prop-types';
 import Collapse from '@mui/material/Collapse';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 import './UserPrompt.css';
 
-function UserPrompt({ description, response }) {
+function UserPrompt({
+  description, response, demonstrate, className,
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
   const collapsible = useRef();
+
+  useEffect(() => {
+    if (demonstrate) {
+      setTimeout(() => {
+        setIsExpanded(true);
+        setTimeout(() => {
+          setIsExpanded(false);
+        }, 2000);
+      }, 2000);
+    }
+  }, [demonstrate]);
 
   useLayoutEffect(() => {
     let startTouchPosX;
@@ -49,7 +64,7 @@ function UserPrompt({ description, response }) {
   }, [collapsible, isExpanded, setIsExpanded]);
 
   return (
-    <li className={isExpanded ? 'user user-open' : 'user'} ref={collapsible}>
+    <li className={`${className} ${isExpanded ? 'user user-open' : 'user'}`} ref={collapsible}>
       <div className="clickable">
         {isExpanded ? <ArrowRightIcon className="rotated" /> : <ArrowRightIcon /> }
         <div>
@@ -69,6 +84,13 @@ function UserPrompt({ description, response }) {
 UserPrompt.propTypes = {
   description: PropTypes.string.isRequired,
   response: PropTypes.string.isRequired,
+  demonstrate: PropTypes.bool,
+  className: PropTypes.string,
+};
+
+UserPrompt.defaultProps = {
+  demonstrate: false,
+  className: '',
 };
 
 export default UserPrompt;
