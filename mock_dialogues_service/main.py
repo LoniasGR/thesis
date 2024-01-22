@@ -70,7 +70,7 @@ class SPAStaticFiles(StaticFiles):
 
 @app.get("/generate", response_model=list[schemas.Suggestion])
 def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)):
-    client = crud.create_or_get_client(db, host=request.client.host)
+    client = crud.create_or_get_client(db, host=request.headers['x-forwarded-for'])
 
     ret_data = list()
     for d in range(dialogues):
