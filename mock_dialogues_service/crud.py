@@ -1,3 +1,4 @@
+from sqlalchemy import Sequence
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 import sqlalchemy.sql.functions as func
@@ -29,6 +30,11 @@ def get_evaluation_by_uuid(db: Session, uuid: str) -> models.EvaluationDB | None
     return db.scalar(
         select(models.EvaluationDB).where(models.EvaluationDB.uuid == uuid)
     )
+
+def get_all_answered_evaluations(db: Session):
+    return db.scalars(
+        select(models.EvaluationDB).where(models.EvaluationDB.answer != None)
+    ).all()
 
 
 def update_evaluation_answer(db: Session, uuid: str, answer: bool):

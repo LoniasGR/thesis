@@ -46,7 +46,6 @@ class ClientDB(Base):
     host: Mapped[str] = mapped_column(nullable=False)
     evaluations: Mapped[List[EvaluationDB]] = relationship(back_populates="client")
 
-
 class UserDialogueDB(Base):
     __tablename__ = "user_dialogues"
 

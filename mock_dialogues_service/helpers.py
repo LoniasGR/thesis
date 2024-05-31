@@ -33,12 +33,9 @@ def get_actions(data):
         intent_to_functionality_dict[x] for x in previous_intents
     ]
 
-    remaining_suggestions = [
-        f
-        for f in list_of_functionalities
-        if f not in previous_functionalities_from_intents
-        and f not in previous_slot_values
-    ] + ["no_action"]
+    remaining_suggestions= generate_remaining_suggestions(
+        previous_functionalities_from_intents, 
+        previous_slot_values)
 
     return (
         previous_intents,
@@ -46,13 +43,22 @@ def get_actions(data):
         remaining_suggestions,
     )
 
+def generate_remaining_suggestions(functionalities, slot_values=[]):
+    return [
+        f
+        for f in list_of_functionalities
+        if f not in functionalities
+        and f not in slot_values
+    ] + ["no_action"]
 
-def remove_useless_intents(intents):
+
+def remove_useless_intents(intents: list[str]):
     clean_intents = list()
     for i in intents:
         if "+" in i:
             clean_intents += i.split("+")
-        clean_intents.append(i)
+        else:
+            clean_intents.append(i)
     return list(
         set(
             [
