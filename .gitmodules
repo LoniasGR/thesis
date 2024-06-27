@@ -1,3 +1,6 @@
 [submodule "thesis-report"]
 	path = thesis-report
 	url = https://github.com/LoniasGR/thesis-report
+[submodule "smart-suggest-microservice"]
+	path = smart-suggest-microservice
+	url = https://gitlab.com/LoniasGR/smart-suggest-microservice
