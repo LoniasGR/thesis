@@ -1,0 +1,6 @@
+vowpalwabbit
+fastapi
+uvicorn[standard]
+sqlalchemy
+devtools[pygments]
+python-dotenv

@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8005:80"
+    volumes:
+      - type: bind
+        source: ./smart_suggest.db
+        target: /code/app/smart_suggest.db
+      - type: bind
+        source: ./models
+        target: /code/app/models
+    environment:
+      - VOWPALWABBIT_MODEL=/code/app/models/candidate_model.vw
+
+networks:
+  default:
+    name: docker_server
+    external: true
