@@ -3,7 +3,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 import sqlalchemy.sql.functions as func
 
-import models, schemas
+from . import models
+import models.schemas as schemas
 
 
 def get_all(clazz: type, db: Session, skip: int = 0, limit: int = 100):
@@ -30,6 +31,7 @@ def get_evaluation_by_uuid(db: Session, uuid: str) -> models.EvaluationDB | None
     return db.scalar(
         select(models.EvaluationDB).where(models.EvaluationDB.uuid == uuid)
     )
+
 
 def get_all_answered_evaluations(db: Session):
     return db.scalars(

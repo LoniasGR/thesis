@@ -3,14 +3,14 @@ import os
 
 os.environ["DB_URL"] = "sqlite:///./production.db"
 
-from database import SessionLocal
-from crud import get_all_answered_evaluations
+from db.database import SessionLocal
+from db.crud import get_all_answered_evaluations
 from helpers import (
     get_unique_functionalities,
     remove_useless_intents,
     generate_remaining_suggestions,
 )
-from mappings import intent_to_functionality_dict
+from .mappings import intent_to_functionality_dict
 
 
 def main():

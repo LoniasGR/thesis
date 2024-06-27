@@ -1,22 +1,23 @@
 import uuid
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Request, Depends
+from fastapi import FastAPI, Request, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
-from helpers import get_all_intents
 
-from generate_dialogues import (
+from utils.helpers import get_all_intents
+from utils.generate_dialogues import (
     generate_dialogue,
     create_user_utterances,
     generate_suggestion,
     present_suggestion,
     create_bot_responses,
 )
-from database import SessionLocal, engine
-import crud, models, schemas
-from logger import CustomLogger
+from db.database import SessionLocal, engine
+import db.crud as crud, db.models as models
+import models.schemas as schemas
+from logger.logger import CustomLogger
 
 
 models.Base.metadata.create_all(bind=engine)
@@ -70,7 +71,7 @@ class SPAStaticFiles(StaticFiles):
 
 @app.get("/generate", response_model=list[schemas.Suggestion])
 def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)):
-    client = crud.create_or_get_client(db, host=request.headers['x-forwarded-for'])
+    client = crud.create_or_get_client(db, host=request.headers["x-forwarded-for"])
 
     ret_data = list()
     for d in range(dialogues):
@@ -107,6 +108,27 @@ def evaluate(ev: schemas.EvaluationBase, db: Session = Depends(get_db)):
     if new_ev == None:
         raise HTTPException(status_code=400, detail="Wrong evaluation id")
     return new_ev
+
+
+@app.get(
+    "/health",
+    tags=["healthcheck"],
+    summary="Perform a Health Check",
+    response_description="Return HTTP Status Code 200 (OK)",
+    status_code=status.HTTP_200_OK,
+    response_model=schemas.HealthCheck,
+)
+def get_health() -> schemas.HealthCheck:
+    """
+    ## Perform a Health Check
+    Endpoint to perform a healthcheck on. This endpoint can primarily be used Docker
+    to ensure a robust container orchestration and management is in place. Other
+    services which rely on proper functioning of the API service will not deploy if this
+    endpoint returns any other HTTP status code except 200 (OK).
+    Returns:
+        HealthCheck: Returns a JSON response with the health status
+    """
+    return schemas.HealthCheck(status="OK")
 
 
 app.mount("/", SPAStaticFiles(directory="frontend/dist", html=True), name="app")

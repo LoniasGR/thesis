@@ -1,4 +1,4 @@
-from mappings import (
+from .mappings import (
     intent_to_functionality_dict,
     list_of_functionalities,
     limited_intent_to_functionality_dict,

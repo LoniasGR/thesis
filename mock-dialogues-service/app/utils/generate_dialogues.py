@@ -2,7 +2,7 @@ import os
 import random
 import signal
 
-from mappings import (
+from .mappings import (
     intent_to_functionality_dict,
     limited_intent_to_functionality_dict,
     list_of_functionalities,
@@ -10,7 +10,7 @@ from mappings import (
     functionality_proposal,
     limited_intent_to_response_dict,
 )
-from helpers import remove_useless_intents, get_unique_functionalities
+from .helpers import remove_useless_intents, get_unique_functionalities
 
 
 def screen_clear():

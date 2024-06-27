@@ -4,14 +4,11 @@ from datetime import datetime
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
-from sqlalchemy import Column
-from sqlalchemy import Table
 from sqlalchemy import ForeignKey
-from sqlalchemy import Integer
 import sqlalchemy.sql.functions as func
 from typing import List
 
-from database import Base
+from .database import Base
 
 
 class EvaluationDialoguesDB(Base):
@@ -45,6 +42,7 @@ class ClientDB(Base):
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
     host: Mapped[str] = mapped_column(nullable=False)
     evaluations: Mapped[List[EvaluationDB]] = relationship(back_populates="client")
+
 
 class UserDialogueDB(Base):
     __tablename__ = "user_dialogues"
