@@ -12,7 +12,7 @@ services:
     volumes:
       - ./rl_hf.dat:/code/app/rl_hf.dat
       - ./production.db:/code/app/production.db
-    restart: unless-stopped
+    restart: always
 
 networks:
   default:
