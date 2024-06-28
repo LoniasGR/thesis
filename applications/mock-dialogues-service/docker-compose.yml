@@ -2,6 +2,8 @@ services:
   fastapi:
     image: mock-dialogues-service
     build: .
+    ports:
+      - 8123:80
     environment:
       - UID=${USID}
       - GID=${GID}

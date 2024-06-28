@@ -9,6 +9,10 @@ def get_all_intents():
     return list(limited_intent_to_functionality_dict.keys())
 
 
+def get_functionalities_from_intents(intents):
+    return [intent_to_functionality_dict[x] for x in intents]
+
+
 def get_actions(data):
     previous_slot_values = list(
         set(
@@ -29,9 +33,9 @@ def get_actions(data):
     ]
 
     # Map previous intents to functionalities
-    previous_functionalities_from_intents = [
-        intent_to_functionality_dict[x] for x in previous_intents
-    ]
+    previous_functionalities_from_intents = get_functionalities_from_intents(
+        previous_intents
+    )
 
     remaining_suggestions = generate_remaining_suggestions(
         previous_functionalities_from_intents, previous_slot_values

@@ -4,6 +4,7 @@ from fastapi import FastAPI, Request, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.exceptions import HTTPException
+from sqlalchemy import null
 from sqlalchemy.orm import Session
 
 from utils.helpers import get_all_intents
@@ -71,7 +72,11 @@ class SPAStaticFiles(StaticFiles):
 
 @app.get("/generate", response_model=list[schemas.Suggestion])
 def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)):
-    client = crud.create_or_get_client(db, host=request.headers["x-forwarded-for"])
+    host = request.headers["Host"]
+    if "x-forwared-for" in request.headers:
+        host = request.headers["x-forwared-for"]
+
+    client = crud.create_or_get_client(db, host=host)
 
     ret_data = list()
     for d in range(dialogues):
