@@ -1,6 +1,6 @@
 import json
 import math
-from mock_dialogues_service.helpers import (
+from applications.mock_dialogues_service.app.common.helpers import (
     get_actions,
     remove_useless_intents,
     get_unique_functionalities,
@@ -81,19 +81,19 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
 
                     probability = 1.0 / (len(remaining_suggestions) + 1)
 
-                    out_file.write(f"shared |{' '.join(map(str, context))}\n")
-                    all_data_file.write(f"shared |{' '.join(map(str, context))}\n")
+                    out_file.write(f"shared | {' '.join(map(str, context))}\n")
+                    all_data_file.write(f"shared | {' '.join(map(str, context))}\n")
 
                     out_file.write(
-                        f"{unique_actions.index(action)}:{float(result)}:{probability} |{action}\n"
+                        f"{unique_actions.index(action)}:{float(-(result-1))}:{probability} | {action}\n"
                     )
                     all_data_file.write(
-                        f"{unique_actions.index(action)}:{float(result)}:{probability} |{action}\n"
+                        f"{unique_actions.index(action)}:{float(-(result-1))}:{probability} | {action}\n"
                     )
                     for sug in remaining_suggestions:
                         if sug != action:
-                            out_file.write(f"|{sug}\n")
-                            all_data_file.write(f"|{sug}\n")
+                            out_file.write(f"| {sug}\n")
+                            all_data_file.write(f"| {sug}\n")
                     out_file.write("\n")
                     all_data_file.write("\n")
 
@@ -107,21 +107,21 @@ def create_vw_data(filename, lines, debug_file, all_data_file):
 
 
 def main():
-    with open("conversations-all.json", "r") as f:
+    with open("data/conversations-all.json", "r") as f:
         lines = f.readlines()
 
     unique_actions = get_unique_functionalities()
 
-    with open("actions.data", "w") as actions_f:
+    with open("data/actions.data", "w") as actions_f:
         for i, action in enumerate(unique_actions):
             actions_f.write(f"{i+1} - {action} \n")
 
-    with open("./actions.txt", "w") as debug_file:
-        with open("./data.dat", "w") as all_data_file:
+    with open("data/actions.txt", "w") as debug_file:
+        with open("data/data.dat", "w") as all_data_file:
             debug_file.write(f"There are {len(unique_actions)} unique actions\n")
 
             total_results, examples, useful_samples, loss1 = create_vw_data(
-                "./train.dat",
+                "data/train.dat",
                 lines[: math.floor(0.7 * len(lines))],
                 debug_file,
                 all_data_file,
@@ -133,7 +133,7 @@ def main():
                 temp_useful_samples,
                 loss2,
             ) = create_vw_data(
-                "./test.dat",
+                "data/test.dat",
                 lines[math.floor(0.7 * len(lines)) :],
                 debug_file,
                 all_data_file,

@@ -1,0 +1,2323 @@
+shared | ask_chitchat
+2:0.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ill_questionnaire_form ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ill_questionnaire_form ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ill_questionnaire_form ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search covid_stats
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search covid_stats
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms pharma_search covid_stats find_new_icus vaccines
+3:1.0:0.1111111111111111 | no_action
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq vaccines
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | mask_faq
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq underlying_conditions ask_chitchat covid_stats
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+
+shared | EODY_faq underlying_conditions ask_chitchat covid_stats
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat underlying_conditions covid_stats icu_stats_form find_new_icus EODY_faq
+3:0.0:0.1 | no_action
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+
+shared | ask_chitchat underlying_conditions covid_stats icu_stats_form find_new_icus EODY_faq
+5:0.0:0.1 | symptoms
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat
+11:0.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | covid_stats
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+6:1.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_cost covid_stats
+7:1.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+6:1.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+5:1.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms covid_stats
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive covid_stats
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | what_to_do_if_positive covid_stats
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | covid_stats
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharmacy_form covid_stats
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms pharmacy_form covid_stats
+3:1.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search covid_stats
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats_form covid_stats
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccine_stats_form covid_stats
+10:1.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms ask_chitchat
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq symptoms ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq symptoms ask_chitchat
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat symptoms underlying_conditions EODY_faq vaccines
+10:1.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat mask_faq symptoms underlying_conditions ways_of_protection EODY_faq vaccines
+4:1.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | vaccines pharmacy_form ask_chitchat mask_faq symptoms underlying_conditions ways_of_protection EODY_faq pharma_search
+11:1.0:0.1111111111111111 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive vaccines pharmacy_form ask_chitchat mask_faq symptoms underlying_conditions ways_of_protection EODY_faq pharma_search
+3:1.0:0.125 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+
+shared | ask_chitchat
+6:1.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+0:1.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search
+6:0.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_cost pharma_search
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat covid_stats
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharmacy_form ask_chitchat covid_stats
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | what_is_athena pharmacy_form ask_chitchat covid_stats
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharmacy_form ask_chitchat covid_stats vaccine_stats_form
+3:1.0:0.1 | no_action
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | what_is_athena pharmacy_form ask_chitchat covid_stats vaccine_stats_form pharma_search
+7:0.0:0.1 | test_types
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharmacy_form ask_chitchat test_types covid_stats vaccine_stats_form pharma_search
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines
+7:1.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_types vaccines
+5:1.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq symptoms test_types vaccines
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | symptoms underlying_conditions test_types EODY_faq vaccines
+11:1.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive symptoms underlying_conditions test_types vaccine_stats EODY_faq vaccines
+1:0.0:0.125 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+4:1.0:0.14285714285714285 | pharmacy_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive pharmacy_form symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+3:1.0:0.16666666666666666 | no_action
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+3:0.0:0.16666666666666666 | no_action
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+3:1.0:0.16666666666666666 | no_action
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+3:0.0:0.16666666666666666 | no_action
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats EODY_faq vaccines
+10:1.0:0.16666666666666666 | ways_of_protection
+| covid_statistics_form
+| ill_questionnaire_form
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats ways_of_protection EODY_faq vaccines
+0:1.0:0.2 | covid_statistics_form
+| ill_questionnaire_form
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats ways_of_protection covid_statistics_form EODY_faq vaccines
+3:0.0:0.25 | no_action
+| ill_questionnaire_form
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats ways_of_protection covid_statistics_form EODY_faq vaccines
+3:0.0:0.25 | no_action
+| ill_questionnaire_form
+| test_cost
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat symptoms underlying_conditions test_types icu_stats_form vaccine_stats ways_of_protection covid_statistics_form EODY_faq collective_ways_of_protection vaccines
+6:0.0:0.25 | test_cost
+| ill_questionnaire_form
+| no_action
+
+shared | what_to_do_if_positive pharmacy_form ask_chitchat test_cost symptoms underlying_conditions test_types icu_stats_form vaccine_stats ways_of_protection covid_statistics_form EODY_faq collective_ways_of_protection vaccines
+2:1.0:0.3333333333333333 | ill_questionnaire_form
+| no_action
+
+shared | whats_your_name
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq whats_your_name
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq whats_your_name covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq whats_your_name pharma_search covid_stats
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive vaccines covid_stats
+6:1.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat test_cost pharma_search covid_stats vaccines
+5:1.0:0.1111111111111111 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| underlying_conditions
+| no_action
+
+shared | EODY_faq
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq
+5:0.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq symptoms
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+5:1.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms covid_stats
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | symptoms vaccines covid_stats
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms vaccines ways_of_protection covid_stats
+6:0.0:0.1 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat test_cost symptoms covid_stats ways_of_protection vaccines
+8:0.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq covid_stats
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccine_stats_form covid_stats
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats ways_of_protection vaccines
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccine_stats ways_of_protection vaccines
+1:1.0:0.09090909090909091 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats ways_of_protection icu_stats_form vaccines
+3:1.0:0.1 | no_action
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq covid_stats
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost test_types covid_stats
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive rapid_test_cost test_types covid_stats
+8:1.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats rapid_test_cost
+3:1.0:0.125 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+
+shared | pharma_search
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharma_search
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat covid_stats
+6:1.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pharma_search
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq ill_questionnaire_form pharma_search
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ill_questionnaire_form
+0:1.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ill_questionnaire_form covid_stats covid_statistics_form
+7:1.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | mask_faq
+1:1.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq icu_stats_form
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive mask_faq icu_stats_form
+3:0.0:0.09090909090909091 | no_action
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | covid_stats
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat covid_stats
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive underlying_conditions ask_chitchat covid_stats
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats
+3:0.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats vaccine_stats_form
+3:0.0:0.125 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats vaccine_stats_form
+10:1.0:0.125 | ways_of_protection
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats ways_of_protection vaccine_stats_form
+1:0.0:0.14285714285714285 | icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive ask_chitchat underlying_conditions test_types covid_stats icu_stats_form ways_of_protection vaccine_stats_form
+5:0.0:0.16666666666666666 | symptoms
+| pharmacy_form
+| ill_questionnaire_form
+| test_cost
+| no_action
+
+shared | self_test
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq self_test
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | am_i_ill
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | am_i_ill vaccine_stats_form
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | whats_your_name am_i_ill vaccine_stats_form
+6:1.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat test_cost whats_your_name am_i_ill vaccine_stats_form
+10:1.0:0.1 | ways_of_protection
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat vaccine_stats_form whats_your_name ways_of_protection am_i_ill vaccine_stats test_cost
+3:0.0:0.1111111111111111 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat EODY_faq vaccine_stats_form whats_your_name am_i_ill ways_of_protection vaccine_stats test_cost
+0:1.0:0.1111111111111111 | covid_statistics_form
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat test_cost EODY_faq whats_your_name am_i_ill ways_of_protection covid_statistics_form vaccine_stats vaccine_stats_form
+7:1.0:0.125 | test_types
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat test_cost EODY_faq test_types whats_your_name am_i_ill ways_of_protection covid_statistics_form vaccine_stats vaccine_stats_form
+3:1.0:0.14285714285714285 | no_action
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_types pharma_search
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq covid_stats
+6:1.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq test_cost covid_stats
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms covid_stats am_i_ill EODY_faq test_cost
+3:0.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat symptoms covid_stats am_i_ill EODY_faq test_cost
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat symptoms covid_stats am_i_ill EODY_faq test_cost
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms ill_questionnaire_form am_i_ill vaccines
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | symptoms ill_questionnaire_form am_i_ill vaccines
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | mask_faq
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharmacy_form mask_faq
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharmacy_form mask_faq covid_stats
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharmacy_form mask_faq symptoms covid_stats vaccines
+3:0.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pharmacy_form mask_faq symptoms covid_stats vaccines
+6:1.0:0.1 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+3:0.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_types covid_stats find_new_icus
+3:1.0:0.1 | no_action
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | test_types covid_stats find_new_icus
+2:0.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ill_questionnaire_form test_types covid_stats am_i_ill find_new_icus
+3:1.0:0.1111111111111111 | no_action
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines
+1:1.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
