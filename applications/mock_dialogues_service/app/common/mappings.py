@@ -145,7 +145,7 @@ limited_intent_to_dialogue_dict = {
     "greetings+ask_chitchat": "Γεία! Πώς είσαι;",
     "thank_you+covid_stats": "Ευχαριστώ! Μπορείς να μου πείς πόσα ήταν τα κρούσματα σήμερα;",
     "greetings+whats_your_name": "Γεία! Πώς σε λένε;",
-    "what_is_ilsp+what_is_athena": "Τί είναι το Αθηνά και το ILSP; ",
+    "what_is_ilsp+what_is_athena": "Τί είναι το Αθηνά και το ILSP;",
     "why_theano": "Γιατί σε λένε Θεανώ;",
     "may_i_ask": "Να ρωτήσω κάτι;",
     "sorry": "Συγγνώμη",

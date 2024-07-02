@@ -2,6 +2,7 @@ from .mappings import (
     intent_to_functionality_dict,
     list_of_functionalities,
     limited_intent_to_functionality_dict,
+    limited_intent_to_response_dict,
 )
 
 
@@ -95,3 +96,7 @@ def remove_useless_intents(intents: list[str]):
 def get_unique_functionalities():
     functionalities = intent_to_functionality_dict.values()
     return sorted(list(set(functionalities)))
+
+
+def get_response_from_intent(intent):
+    return limited_intent_to_response_dict[intent]

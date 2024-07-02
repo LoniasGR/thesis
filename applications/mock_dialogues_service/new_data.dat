@@ -1,0 +1,6872 @@
+shared | all_test_cost pharma_search self_test test_types covid_stats ask_chitchat what_is_ilsp all_ways_of_protection general_knowledge_tests
+8:0.0:0.125 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | mask_faq whats_your_name collective_ways_of_protection
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats whats_your_name
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats personal_ways_of_protection vaccine_stats what_is_athena
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq whats_your_name symptoms what_is_ilsp
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive what_is_ilsp test_types collective_ways_of_protection
+4:1.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena covid_stats what_to_do_if_positive personal_ways_of_protection what_is_ilsp all_ways_of_protection
+3:1.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | covid_stats
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name vaccine_stats what_is_athena test_types why_avoid_pharma what_is_ilsp
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | vaccines
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena vaccines all_test_cost covid_stats what_is_ilsp all_ways_of_protection
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost what_is_athena pharma_search am_i_ill ways_of_protection test_types all_ways_of_protection
+1:1.0:0.125 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms ask_chitchat whats_your_name
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats
+1:1.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | pcr_test_cost mask_faq collective_ways_of_protection
+4:1.0:0.09090909090909091 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost test_cost why_avoid_pharma ask_chitchat rapid_test_cost general_knowledge_tests
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq why_theano what_is_athena pharma_search ways_of_protection covid_stats
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost covid_stats ways_of_protection
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq pharma_search test_types why_avoid_pharma what_is_ilsp general_knowledge_tests
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines whats_your_name personal_ways_of_protection
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccines covid_stats
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search whats_your_name
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost what_is_athena self_test test_types rapid_test_cost
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost why_theano what_is_athena vaccines find_new_icus general_knowledge_tests
+3:0.0:0.09090909090909091 | no_action
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pcr_test_cost vaccine_stats collective_ways_of_protection personal_ways_of_protection what_is_ilsp symptoms
+11:0.0:0.1111111111111111 | what_to_do_if_positive
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | why_theano mask_faq what_is_athena pharma_search self_test personal_ways_of_protection what_is_ilsp
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pharma_search test_cost
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | what_to_do_if_positive test_types
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+| no_action
+
+shared | pharma_search test_cost ways_of_protection why_avoid_pharma ask_chitchat symptoms
+9:1.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name what_is_athena pharma_search self_test ways_of_protection find_new_icus symptoms rapid_test_cost general_knowledge_tests
+11:0.0:0.125 | what_to_do_if_positive
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | EODY_faq covid_stats mask_faq
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | self_test test_cost ways_of_protection why_avoid_pharma what_is_ilsp ask_chitchat rapid_test_cost
+9:1.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_ilsp am_i_ill
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ways_of_protection
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | EODY_faq pcr_test_cost vaccine_stats all_test_cost am_i_ill collective_ways_of_protection what_to_do_if_positive find_new_icus what_is_ilsp
+5:0.0:0.14285714285714285 | symptoms
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | all_test_cost test_types covid_stats ask_chitchat all_ways_of_protection
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat covid_stats find_new_icus vaccine_stats
+8:1.0:0.1 | underlying_conditions
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq whats_your_name pharma_search test_types underlying_conditions covid_stats symptoms rapid_test_cost
+9:0.0:0.14285714285714285 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| what_to_do_if_positive
+| no_action
+
+shared | whats_your_name all_test_cost am_i_ill collective_ways_of_protection what_to_do_if_positive why_avoid_pharma symptoms
+9:0.0:0.125 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats what_is_athena covid_stats why_avoid_pharma find_new_icus ask_chitchat
+8:0.0:0.1 | underlying_conditions
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | whats_your_name vaccine_stats pharma_search test_cost covid_stats why_avoid_pharma what_to_do_if_positive
+10:0.0:0.125 | ways_of_protection
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | vaccines
+10:0.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena covid_stats find_new_icus what_is_ilsp rapid_test_cost
+9:0.0:0.1 | vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name vaccine_stats what_is_athena test_types all_ways_of_protection what_is_ilsp ask_chitchat general_knowledge_tests
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost self_test test_cost test_types what_to_do_if_positive underlying_conditions personal_ways_of_protection ask_chitchat
+3:0.0:0.125 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+
+shared | whats_your_name pharma_search covid_stats all_ways_of_protection rapid_test_cost
+11:1.0:0.1111111111111111 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | what_is_athena all_test_cost ways_of_protection what_to_do_if_positive why_avoid_pharma covid_stats personal_ways_of_protection rapid_test_cost
+8:1.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | whats_your_name all_test_cost covid_stats why_avoid_pharma what_to_do_if_positive personal_ways_of_protection ask_chitchat
+7:1.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | whats_your_name self_test ways_of_protection underlying_conditions what_is_ilsp ask_chitchat
+4:0.0:0.09090909090909091 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_athena covid_stats ask_chitchat personal_ways_of_protection what_is_ilsp all_ways_of_protection rapid_test_cost
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | mask_faq what_is_athena what_to_do_if_positive find_new_icus personal_ways_of_protection what_is_ilsp ask_chitchat
+0:1.0:0.1 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | find_new_icus
+4:1.0:0.07692307692307693 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | whats_your_name vaccine_stats vaccines test_cost collective_ways_of_protection
+5:1.0:0.1 | symptoms
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search collective_ways_of_protection
+2:1.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search mask_faq vaccine_stats
+1:1.0:0.1 | icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | find_new_icus rapid_test_cost
+4:1.0:0.08333333333333333 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | covid_stats why_theano
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats all_test_cost personal_ways_of_protection
+8:0.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | vaccine_stats what_is_athena self_test what_is_ilsp ask_chitchat
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | 
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats all_test_cost personal_ways_of_protection self_test
+5:1.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost pharma_search whats_your_name what_is_ilsp
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats vaccines test_types why_avoid_pharma symptoms
+2:1.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search covid_stats underlying_conditions ask_chitchat symptoms general_knowledge_tests
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+
+shared | whats_your_name am_i_ill collective_ways_of_protection ways_of_protection covid_stats symptoms ask_chitchat
+6:1.0:0.1111111111111111 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq what_to_do_if_positive why_avoid_pharma rapid_test_cost
+0:1.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | pcr_test_cost what_is_athena vaccines pharma_search collective_ways_of_protection covid_stats find_new_icus ask_chitchat all_ways_of_protection
+9:1.0:0.125 | vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost find_new_icus what_is_athena what_is_ilsp
+4:1.0:0.09090909090909091 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano am_i_ill underlying_conditions covid_stats personal_ways_of_protection all_ways_of_protection rapid_test_cost
+7:1.0:0.125 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | all_ways_of_protection covid_stats why_avoid_pharma mask_faq
+7:1.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search test_types covid_stats why_avoid_pharma personal_ways_of_protection all_ways_of_protection
+6:0.0:0.1111111111111111 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive personal_ways_of_protection whats_your_name ways_of_protection
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+
+shared | pcr_test_cost whats_your_name test_types covid_stats personal_ways_of_protection general_knowledge_tests
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines why_avoid_pharma covid_stats collective_ways_of_protection
+11:1.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq self_test covid_stats why_avoid_pharma find_new_icus symptoms general_knowledge_tests
+2:1.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena covid_stats personal_ways_of_protection what_is_ilsp symptoms
+2:1.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq am_i_ill
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pharma_search test_cost
+10:1.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost test_types
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+9:0.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines whats_your_name
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccines test_cost collective_ways_of_protection covid_stats test_types ask_chitchat all_ways_of_protection rapid_test_cost
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq all_test_cost collective_ways_of_protection what_to_do_if_positive underlying_conditions covid_stats symptoms rapid_test_cost
+1:1.0:0.14285714285714285 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| no_action
+
+shared | symptoms
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | symptoms pharma_search personal_ways_of_protection test_cost
+7:1.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+0:1.0:0.07692307692307693 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena am_i_ill covid_stats underlying_conditions what_to_do_if_positive
+9:1.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | find_new_icus rapid_test_cost
+5:0.0:0.08333333333333333 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | pcr_test_cost mask_faq whats_your_name covid_stats ask_chitchat
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name test_cost collective_ways_of_protection
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq am_i_ill test_types covid_stats all_ways_of_protection ask_chitchat rapid_test_cost
+3:1.0:0.125 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | all_test_cost test_cost
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | underlying_conditions pharma_search
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | covid_stats why_avoid_pharma what_to_do_if_positive
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccines test_types underlying_conditions what_to_do_if_positive find_new_icus ask_chitchat
+4:1.0:0.1111111111111111 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| no_action
+
+shared | pcr_test_cost what_to_do_if_positive underlying_conditions covid_stats all_ways_of_protection
+4:0.0:0.125 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | pcr_test_cost why_theano what_is_athena test_types covid_stats find_new_icus what_is_ilsp rapid_test_cost
+5:1.0:0.1111111111111111 | symptoms
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats self_test collective_ways_of_protection
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccine_stats what_is_athena pharma_search self_test what_is_ilsp ask_chitchat general_knowledge_tests
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost whats_your_name am_i_ill
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name self_test collective_ways_of_protection all_ways_of_protection symptoms
+11:0.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_athena test_types ways_of_protection covid_stats ask_chitchat what_is_ilsp symptoms
+11:0.0:0.1111111111111111 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost mask_faq am_i_ill test_types covid_stats what_to_do_if_positive underlying_conditions
+3:0.0:0.14285714285714285 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+
+shared | all_ways_of_protection find_new_icus test_types
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | why_theano whats_your_name test_cost why_avoid_pharma symptoms
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats
+7:1.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq pcr_test_cost what_to_do_if_positive why_avoid_pharma covid_stats all_ways_of_protection
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats vaccines pharma_search underlying_conditions why_avoid_pharma what_is_ilsp
+6:0.0:0.1 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq pcr_test_cost whats_your_name find_new_icus ask_chitchat
+0:0.0:0.09090909090909091 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pharma_search self_test test_types underlying_conditions ask_chitchat rapid_test_cost
+9:1.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | find_new_icus
+0:0.0:0.08333333333333333 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost vaccine_stats pharma_search self_test test_cost all_ways_of_protection ask_chitchat general_knowledge_tests
+8:0.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines pharma_search test_types ways_of_protection symptoms
+1:0.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | self_test vaccine_stats collective_ways_of_protection
+6:1.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines pharma_search covid_stats general_knowledge_tests
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines self_test collective_ways_of_protection underlying_conditions rapid_test_cost general_knowledge_tests
+5:0.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq what_is_athena am_i_ill collective_ways_of_protection personal_ways_of_protection what_is_ilsp all_ways_of_protection
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pharma_search collective_ways_of_protection covid_stats what_to_do_if_positive
+5:1.0:0.1111111111111111 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena pharma_search am_i_ill covid_stats find_new_icus what_is_ilsp
+9:1.0:0.1111111111111111 | vaccine_stats_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search covid_stats why_avoid_pharma find_new_icus what_is_ilsp
+6:0.0:0.1 | test_cost
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | underlying_conditions pharma_search covid_stats vaccine_stats
+7:1.0:0.1111111111111111 | test_types
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost pharma_search test_cost collective_ways_of_protection what_to_do_if_positive general_knowledge_tests
+1:1.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccines all_test_cost what_to_do_if_positive general_knowledge_tests
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+
+shared | what_is_athena am_i_ill covid_stats what_is_ilsp rapid_test_cost
+7:1.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats self_test collective_ways_of_protection ways_of_protection symptoms
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_avoid_pharma
+6:0.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena pharma_search collective_ways_of_protection what_is_ilsp symptoms rapid_test_cost general_knowledge_tests
+8:0.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | find_new_icus why_theano am_i_ill
+0:0.0:0.09090909090909091 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq
+1:0.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name pharma_search covid_stats symptoms
+8:0.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | am_i_ill collective_ways_of_protection
+1:0.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost covid_stats whats_your_name
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name pharma_search covid_stats underlying_conditions all_ways_of_protection
+7:0.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_ilsp
+7:0.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena self_test covid_stats what_to_do_if_positive what_is_ilsp rapid_test_cost general_knowledge_tests
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena test_types personal_ways_of_protection all_ways_of_protection what_is_ilsp symptoms
+3:0.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | test_cost
+1:1.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq what_is_athena vaccines all_test_cost pharma_search underlying_conditions covid_stats personal_ways_of_protection general_knowledge_tests
+9:1.0:0.125 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost whats_your_name vaccine_stats vaccines collective_ways_of_protection what_to_do_if_positive ask_chitchat general_knowledge_tests
+0:0.0:0.1111111111111111 | covid_statistics_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccines am_i_ill personal_ways_of_protection ask_chitchat
+1:0.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat whats_your_name what_is_athena general_knowledge_tests
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name general_knowledge_tests
+10:0.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq ask_chitchat pharma_search
+6:0.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name ways_of_protection all_ways_of_protection general_knowledge_tests
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq mask_faq all_test_cost pharma_search collective_ways_of_protection what_to_do_if_positive
+8:1.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | EODY_faq what_is_athena all_test_cost pharma_search covid_stats what_is_ilsp symptoms
+7:0.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena what_is_ilsp
+1:0.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena self_test test_types why_avoid_pharma what_is_ilsp symptoms
+8:0.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq mask_faq pharma_search self_test rapid_test_cost
+2:0.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats personal_ways_of_protection
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq pharma_search test_types covid_stats what_to_do_if_positive all_ways_of_protection ask_chitchat
+8:0.0:0.125 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| no_action
+
+shared | vaccine_stats what_is_athena pharma_search ways_of_protection test_types covid_stats what_is_ilsp symptoms rapid_test_cost
+1:0.0:0.16666666666666666 | icu_stats_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_cost ways_of_protection covid_stats what_is_ilsp general_knowledge_tests
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_athena vaccines self_test am_i_ill ways_of_protection symptoms
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | whats_your_name personal_ways_of_protection vaccine_stats
+8:0.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats pharma_search
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | ask_chitchat what_to_do_if_positive pharma_search what_is_athena
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | why_theano mask_faq whats_your_name all_test_cost ways_of_protection covid_stats ask_chitchat
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena am_i_ill all_ways_of_protection symptoms what_is_ilsp ask_chitchat
+0:0.0:0.1 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_cost ways_of_protection underlying_conditions covid_stats rapid_test_cost
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | what_to_do_if_positive pharma_search
+0:0.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats pharma_search self_test ways_of_protection why_avoid_pharma symptoms
+6:1.0:0.1111111111111111 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena vaccines self_test test_cost covid_stats why_avoid_pharma general_knowledge_tests
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost collective_ways_of_protection covid_stats find_new_icus what_is_ilsp
+2:0.0:0.1111111111111111 | ill_questionnaire_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats test_cost find_new_icus symptoms ask_chitchat rapid_test_cost
+3:0.0:0.1111111111111111 | no_action
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq what_to_do_if_positive ask_chitchat whats_your_name
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccines why_avoid_pharma mask_faq find_new_icus
+4:0.0:0.08333333333333333 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano whats_your_name test_types test_cost what_to_do_if_positive covid_stats what_is_ilsp
+1:0.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | vaccines all_test_cost test_cost
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats whats_your_name
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | self_test
+6:0.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena all_test_cost covid_stats what_is_ilsp rapid_test_cost
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | symptoms ask_chitchat rapid_test_cost test_cost
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines all_test_cost am_i_ill test_types ask_chitchat
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | EODY_faq rapid_test_cost test_types
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search self_test collective_ways_of_protection find_new_icus ask_chitchat
+3:0.0:0.1 | no_action
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq covid_stats personal_ways_of_protection
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost mask_faq what_is_athena am_i_ill covid_stats personal_ways_of_protection symptoms rapid_test_cost
+4:0.0:0.125 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+7:0.0:0.07692307692307693 | test_types
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq whats_your_name all_test_cost pharma_search covid_stats personal_ways_of_protection ask_chitchat
+1:1.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search test_types underlying_conditions all_ways_of_protection what_is_ilsp ask_chitchat general_knowledge_tests
+6:1.0:0.1111111111111111 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | what_to_do_if_positive mask_faq test_types ways_of_protection
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost self_test am_i_ill test_cost collective_ways_of_protection test_types
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena ways_of_protection underlying_conditions covid_stats personal_ways_of_protection ask_chitchat
+2:1.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | all_test_cost find_new_icus
+5:0.0:0.09090909090909091 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat covid_stats pharma_search general_knowledge_tests
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat covid_stats pharma_search
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | find_new_icus whats_your_name test_types ways_of_protection
+3:0.0:0.1 | no_action
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | symptoms covid_stats
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena pharma_search test_cost covid_stats
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name all_test_cost covid_stats personal_ways_of_protection ask_chitchat general_knowledge_tests
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_athena self_test test_cost ways_of_protection what_is_ilsp symptoms general_knowledge_tests
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | why_theano whats_your_name self_test test_cost ask_chitchat general_knowledge_tests
+7:0.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+1:0.0:0.07692307692307693 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | 
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena pharma_search self_test am_i_ill collective_ways_of_protection underlying_conditions why_avoid_pharma rapid_test_cost
+7:1.0:0.125 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | why_avoid_pharma
+6:0.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name pharma_search what_to_do_if_positive underlying_conditions what_is_ilsp ask_chitchat rapid_test_cost
+7:0.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| no_action
+
+shared | pcr_test_cost what_is_athena pharma_search test_cost ways_of_protection what_is_ilsp
+0:0.0:0.1 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats find_new_icus vaccine_stats
+3:1.0:0.09090909090909091 | no_action
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | rapid_test_cost mask_faq collective_ways_of_protection
+9:1.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats general_knowledge_tests
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq why_theano mask_faq pharma_search self_test covid_stats find_new_icus personal_ways_of_protection rapid_test_cost
+8:0.0:0.125 | underlying_conditions
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | all_test_cost
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | whats_your_name vaccines all_test_cost self_test covid_stats symptoms ask_chitchat general_knowledge_tests
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search am_i_ill ways_of_protection covid_stats all_ways_of_protection what_is_ilsp symptoms general_knowledge_tests
+11:1.0:0.125 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena vaccines collective_ways_of_protection what_is_ilsp general_knowledge_tests
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats why_avoid_pharma am_i_ill
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena self_test covid_stats personal_ways_of_protection what_is_ilsp ask_chitchat
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search test_types collective_ways_of_protection what_to_do_if_positive why_avoid_pharma what_is_ilsp general_knowledge_tests
+8:1.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| no_action
+
+shared | EODY_faq what_is_athena am_i_ill ways_of_protection find_new_icus
+7:1.0:0.1 | test_types
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano pharma_search what_to_do_if_positive find_new_icus ask_chitchat
+9:0.0:0.1 | vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq personal_ways_of_protection all_ways_of_protection collective_ways_of_protection
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena self_test covid_stats find_new_icus what_is_ilsp symptoms
+2:1.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | find_new_icus rapid_test_cost
+10:0.0:0.09090909090909091 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano vaccines ways_of_protection test_cost covid_stats what_to_do_if_positive what_is_ilsp
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+
+shared | personal_ways_of_protection
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost whats_your_name vaccines test_types what_to_do_if_positive why_avoid_pharma symptoms
+10:0.0:0.1111111111111111 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| underlying_conditions
+| no_action
+
+shared | why_theano whats_your_name what_is_athena am_i_ill what_is_ilsp
+10:0.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive all_test_cost
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq vaccines test_cost
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search general_knowledge_tests
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines what_is_ilsp underlying_conditions what_is_athena
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats pharma_search vaccine_stats why_theano
+6:1.0:0.1 | test_cost
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | find_new_icus test_types
+10:0.0:0.09090909090909091 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats self_test am_i_ill collective_ways_of_protection covid_stats find_new_icus all_ways_of_protection
+6:0.0:0.125 | test_cost
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat underlying_conditions am_i_ill
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+
+shared | covid_stats
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq pcr_test_cost what_is_athena test_cost ask_chitchat
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena what_is_ilsp test_types
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats find_new_icus whats_your_name pharma_search
+7:0.0:0.1 | test_types
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena vaccines pharma_search self_test find_new_icus personal_ways_of_protection what_is_ilsp ask_chitchat
+2:0.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms why_avoid_pharma test_types
+9:1.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_avoid_pharma why_theano am_i_ill
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano whats_your_name
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost pharma_search self_test collective_ways_of_protection find_new_icus all_ways_of_protection what_is_ilsp ask_chitchat
+7:1.0:0.1111111111111111 | test_types
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | am_i_ill
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat find_new_icus ways_of_protection
+4:0.0:0.09090909090909091 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name
+6:1.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines personal_ways_of_protection test_cost
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost pharma_search vaccine_stats what_is_ilsp
+7:1.0:0.1 | test_types
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | personal_ways_of_protection
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_is_athena vaccines pharma_search find_new_icus what_is_ilsp
+2:0.0:0.09090909090909091 | ill_questionnaire_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name what_is_athena pharma_search collective_ways_of_protection personal_ways_of_protection all_ways_of_protection
+1:1.0:0.1 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines test_cost test_types all_ways_of_protection ask_chitchat rapid_test_cost general_knowledge_tests
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pcr_test_cost pharma_search self_test
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | symptoms covid_stats underlying_conditions
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | symptoms pharma_search general_knowledge_tests
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat covid_stats
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats covid_stats find_new_icus what_to_do_if_positive ask_chitchat
+4:1.0:0.1111111111111111 | pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | covid_stats mask_faq
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats self_test am_i_ill ask_chitchat rapid_test_cost
+3:1.0:0.1 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccine_stats vaccines am_i_ill covid_stats personal_ways_of_protection ask_chitchat
+6:0.0:0.1111111111111111 | test_cost
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat
+9:0.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq mask_faq whats_your_name what_is_athena underlying_conditions find_new_icus what_is_ilsp ask_chitchat
+5:0.0:0.09090909090909091 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | all_ways_of_protection covid_stats underlying_conditions
+5:0.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | whats_your_name vaccine_stats pharma_search am_i_ill test_cost personal_ways_of_protection
+1:1.0:0.125 | icu_stats_form
+| covid_statistics_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines rapid_test_cost collective_ways_of_protection
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | whats_your_name vaccines all_test_cost test_types covid_stats personal_ways_of_protection symptoms
+1:1.0:0.125 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | self_test
+1:0.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano mask_faq am_i_ill ways_of_protection underlying_conditions personal_ways_of_protection
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | rapid_test_cost what_is_ilsp mask_faq general_knowledge_tests
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | pharma_search rapid_test_cost
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pcr_test_cost
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | all_ways_of_protection why_avoid_pharma general_knowledge_tests find_new_icus
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq rapid_test_cost personal_ways_of_protection collective_ways_of_protection
+11:0.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost why_theano vaccines underlying_conditions all_ways_of_protection
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | why_theano pharma_search self_test test_types symptoms ask_chitchat
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | mask_faq whats_your_name underlying_conditions covid_stats all_ways_of_protection general_knowledge_tests
+5:0.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_to_do_if_positive pharma_search whats_your_name vaccine_stats
+7:1.0:0.1 | test_types
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | find_new_icus mask_faq am_i_ill
+10:1.0:0.09090909090909091 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms covid_stats rapid_test_cost vaccine_stats
+3:0.0:0.1 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat whats_your_name
+11:0.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | all_ways_of_protection
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost mask_faq what_is_athena pharma_search collective_ways_of_protection covid_stats all_ways_of_protection
+5:0.0:0.1111111111111111 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | self_test test_cost all_ways_of_protection ask_chitchat rapid_test_cost
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines covid_stats why_avoid_pharma
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | whats_your_name vaccine_stats collective_ways_of_protection ways_of_protection underlying_conditions test_cost all_ways_of_protection symptoms
+7:0.0:0.125 | test_types
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| no_action
+
+shared | ways_of_protection
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq what_is_athena find_new_icus personal_ways_of_protection symptoms
+4:1.0:0.1 | pharmacy_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name pharma_search collective_ways_of_protection covid_stats find_new_icus
+6:1.0:0.1111111111111111 | test_cost
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name vaccine_stats what_is_athena am_i_ill find_new_icus rapid_test_cost
+8:0.0:0.1111111111111111 | underlying_conditions
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | all_ways_of_protection covid_stats ask_chitchat
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pharma_search
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms why_avoid_pharma self_test ask_chitchat
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search whats_your_name
+10:0.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines what_is_athena general_knowledge_tests
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search collective_ways_of_protection ways_of_protection
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pharma_search what_is_athena what_is_ilsp
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines pharma_search collective_ways_of_protection ways_of_protection what_is_ilsp all_ways_of_protection
+9:1.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search test_types covid_stats why_avoid_pharma what_to_do_if_positive personal_ways_of_protection find_new_icus ask_chitchat
+2:1.0:0.14285714285714285 | ill_questionnaire_form
+| vaccine_stats_form
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pharma_search whats_your_name
+7:0.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq test_types test_cost covid_stats why_avoid_pharma
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | whats_your_name am_i_ill collective_ways_of_protection covid_stats general_knowledge_tests
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | what_to_do_if_positive pharma_search ways_of_protection
+0:1.0:0.1 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost
+9:0.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | whats_your_name
+0:0.0:0.07692307692307693 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats ways_of_protection
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | what_is_athena vaccines all_test_cost am_i_ill test_types test_cost what_is_ilsp
+3:1.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | mask_faq whats_your_name vaccine_stats what_is_athena covid_stats what_is_ilsp all_ways_of_protection general_knowledge_tests
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | symptoms pharma_search rapid_test_cost am_i_ill
+1:0.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+5:0.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat whats_your_name
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat vaccines vaccine_stats general_knowledge_tests
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccines rapid_test_cost
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name ways_of_protection
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name personal_ways_of_protection
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | find_new_icus what_is_ilsp
+10:1.0:0.08333333333333333 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq all_test_cost rapid_test_cost symptoms
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+7:1.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq mask_faq whats_your_name pharma_search self_test collective_ways_of_protection
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms why_avoid_pharma whats_your_name
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccines self_test test_cost covid_stats why_avoid_pharma ask_chitchat
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats why_theano rapid_test_cost ways_of_protection
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena vaccines pharma_search underlying_conditions ask_chitchat what_is_ilsp all_ways_of_protection
+6:1.0:0.1 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | symptoms what_is_athena what_is_ilsp
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccines what_to_do_if_positive why_avoid_pharma covid_stats personal_ways_of_protection what_is_ilsp
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | what_is_athena underlying_conditions covid_stats what_is_ilsp ask_chitchat
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+
+shared | ask_chitchat what_to_do_if_positive find_new_icus covid_stats
+8:0.0:0.1 | underlying_conditions
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | pcr_test_cost whats_your_name all_test_cost test_cost ways_of_protection what_to_do_if_positive covid_stats
+8:0.0:0.1111111111111111 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | covid_stats whats_your_name test_cost collective_ways_of_protection
+1:0.0:0.1 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms why_avoid_pharma rapid_test_cost all_ways_of_protection
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena
+2:1.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+0:1.0:0.07692307692307693 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq vaccines symptoms what_is_ilsp ask_chitchat
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano mask_faq vaccine_stats all_test_cost self_test covid_stats
+7:0.0:0.1 | test_types
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name am_i_ill ways_of_protection find_new_icus
+5:0.0:0.1 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines all_test_cost covid_stats underlying_conditions what_to_do_if_positive ask_chitchat rapid_test_cost
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| no_action
+
+shared | why_theano pharma_search what_to_do_if_positive why_avoid_pharma find_new_icus personal_ways_of_protection symptoms ask_chitchat
+8:1.0:0.125 | underlying_conditions
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| no_action
+
+shared | all_ways_of_protection covid_stats ask_chitchat
+2:0.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name
+8:1.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | 
+0:1.0:0.07692307692307693 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms pharma_search
+0:0.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq all_test_cost why_avoid_pharma
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | covid_stats what_is_ilsp what_is_athena general_knowledge_tests
+7:0.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ways_of_protection
+2:0.0:0.07692307692307693 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | why_theano what_is_athena why_avoid_pharma all_ways_of_protection what_is_ilsp ask_chitchat
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena self_test why_avoid_pharma what_is_ilsp rapid_test_cost
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost what_is_athena vaccines pharma_search am_i_ill why_avoid_pharma
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccines pharma_search collective_ways_of_protection find_new_icus rapid_test_cost
+8:0.0:0.1111111111111111 | underlying_conditions
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | mask_faq vaccine_stats
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano whats_your_name pharma_search collective_ways_of_protection covid_stats
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq what_is_athena underlying_conditions ask_chitchat all_ways_of_protection
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | self_test whats_your_name collective_ways_of_protection
+0:0.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena all_test_cost covid_stats what_is_ilsp symptoms
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost ways_of_protection underlying_conditions covid_stats ask_chitchat
+5:0.0:0.1111111111111111 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | all_ways_of_protection
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+9:1.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano general_knowledge_tests am_i_ill collective_ways_of_protection
+4:0.0:0.09090909090909091 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq whats_your_name what_is_athena am_i_ill test_cost personal_ways_of_protection symptoms rapid_test_cost
+7:1.0:0.1111111111111111 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq why_theano what_is_athena collective_ways_of_protection covid_stats why_avoid_pharma underlying_conditions find_new_icus what_is_ilsp ask_chitchat
+7:0.0:0.1111111111111111 | test_types
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat all_test_cost general_knowledge_tests
+10:0.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | ask_chitchat
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | 
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name pharma_search test_cost what_to_do_if_positive why_avoid_pharma underlying_conditions all_ways_of_protection
+1:1.0:0.125 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | pcr_test_cost why_theano vaccine_stats ways_of_protection covid_stats
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search mask_faq whats_your_name
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | underlying_conditions vaccine_stats
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+| no_action
+
+shared | pharma_search self_test test_types underlying_conditions general_knowledge_tests
+1:0.0:0.1 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena collective_ways_of_protection find_new_icus what_is_ilsp symptoms
+6:0.0:0.1 | test_cost
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost why_theano whats_your_name test_cost covid_stats
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pharma_search self_test
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq what_is_athena am_i_ill collective_ways_of_protection what_is_ilsp general_knowledge_tests
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | personal_ways_of_protection
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost am_i_ill collective_ways_of_protection ways_of_protection underlying_conditions what_is_ilsp ask_chitchat general_knowledge_tests
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats personal_ways_of_protection what_is_athena what_is_ilsp
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena test_cost covid_stats what_is_ilsp symptoms
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search rapid_test_cost collective_ways_of_protection
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | EODY_faq self_test am_i_ill test_cost collective_ways_of_protection
+5:1.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search rapid_test_cost test_types
+9:0.0:0.1111111111111111 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | find_new_icus whats_your_name test_cost
+10:0.0:0.09090909090909091 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats what_is_athena all_test_cost pharma_search what_is_ilsp
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name what_is_athena am_i_ill
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats covid_stats all_ways_of_protection ask_chitchat rapid_test_cost
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | symptoms self_test test_cost
+4:0.0:0.09090909090909091 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost pharma_search covid_stats why_theano
+9:1.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq what_is_athena vaccines collective_ways_of_protection all_ways_of_protection
+11:0.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccine_stats vaccines self_test find_new_icus ask_chitchat what_is_ilsp symptoms
+6:1.0:0.1 | test_cost
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat pharma_search personal_ways_of_protection
+1:0.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | 
+7:1.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive rapid_test_cost covid_stats
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats self_test am_i_ill test_cost collective_ways_of_protection what_to_do_if_positive
+0:0.0:0.125 | covid_statistics_form
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost why_avoid_pharma am_i_ill
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats what_is_athena collective_ways_of_protection what_to_do_if_positive underlying_conditions all_ways_of_protection
+7:1.0:0.1111111111111111 | test_types
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| no_action
+
+shared | vaccines pharma_search test_cost ways_of_protection all_ways_of_protection
+8:0.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat why_theano
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost whats_your_name what_is_athena pharma_search test_types covid_stats personal_ways_of_protection
+11:0.0:0.125 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat covid_stats self_test what_is_athena
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats what_is_ilsp test_types ways_of_protection
+8:1.0:0.1 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost whats_your_name ask_chitchat personal_ways_of_protection all_ways_of_protection what_is_ilsp symptoms rapid_test_cost
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | general_knowledge_tests am_i_ill
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccines self_test ways_of_protection covid_stats
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat covid_stats what_is_ilsp collective_ways_of_protection
+9:1.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | self_test am_i_ill covid_stats underlying_conditions ask_chitchat
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | pcr_test_cost whats_your_name am_i_ill collective_ways_of_protection covid_stats what_to_do_if_positive what_is_ilsp symptoms
+3:1.0:0.14285714285714285 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| test_types
+| underlying_conditions
+
+shared | pcr_test_cost all_test_cost self_test am_i_ill why_avoid_pharma ask_chitchat
+4:1.0:0.09090909090909091 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines covid_stats ask_chitchat mask_faq
+2:1.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano what_is_athena what_to_do_if_positive what_is_ilsp rapid_test_cost
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccine_stats pharma_search am_i_ill collective_ways_of_protection covid_stats personal_ways_of_protection
+5:0.0:0.125 | symptoms
+| icu_stats_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name test_cost ways_of_protection covid_stats find_new_icus
+9:1.0:0.1111111111111111 | vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats rapid_test_cost test_types
+11:1.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats ways_of_protection what_to_do_if_positive why_avoid_pharma ask_chitchat general_knowledge_tests
+7:1.0:0.1 | test_types
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | am_i_ill test_cost what_to_do_if_positive why_avoid_pharma what_is_ilsp
+5:1.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| test_types
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name what_to_do_if_positive find_new_icus general_knowledge_tests
+10:0.0:0.1 | ways_of_protection
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | whats_your_name pharma_search test_cost covid_stats ask_chitchat rapid_test_cost
+2:0.0:0.1 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name test_types
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | vaccines mask_faq whats_your_name
+6:1.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | self_test am_i_ill
+11:0.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+5:1.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | whats_your_name all_test_cost what_to_do_if_positive ask_chitchat all_ways_of_protection symptoms
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| underlying_conditions
+
+shared | EODY_faq pcr_test_cost vaccine_stats what_is_athena pharma_search what_to_do_if_positive what_is_ilsp
+10:0.0:0.1111111111111111 | ways_of_protection
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat find_new_icus why_theano what_is_athena
+7:1.0:0.08333333333333333 | test_types
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq mask_faq whats_your_name self_test test_cost covid_stats find_new_icus
+2:1.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq why_theano what_is_athena am_i_ill covid_stats personal_ways_of_protection what_is_ilsp
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | self_test
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat why_theano am_i_ill
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats personal_ways_of_protection
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost test_types
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | general_knowledge_tests
+7:0.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name vaccine_stats vaccines underlying_conditions what_to_do_if_positive personal_ways_of_protection all_ways_of_protection ask_chitchat
+1:1.0:0.125 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | all_ways_of_protection
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | all_test_cost am_i_ill collective_ways_of_protection covid_stats what_is_ilsp ask_chitchat
+3:1.0:0.1111111111111111 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | all_test_cost vaccine_stats
+1:0.0:0.08333333333333333 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq whats_your_name what_is_athena vaccines ways_of_protection what_is_ilsp symptoms
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name what_is_athena covid_stats what_is_ilsp ask_chitchat
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq covid_stats ask_chitchat rapid_test_cost
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | what_is_athena vaccines underlying_conditions what_is_ilsp ask_chitchat
+11:0.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | pharma_search test_cost
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | why_avoid_pharma mask_faq test_cost
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_cost
+9:1.0:0.07692307692307693 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | ask_chitchat underlying_conditions general_knowledge_tests test_cost
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats mask_faq what_is_ilsp
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats what_is_athena am_i_ill ways_of_protection underlying_conditions what_is_ilsp
+0:1.0:0.1111111111111111 | covid_statistics_form
+| icu_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | 
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq vaccines test_cost covid_stats why_avoid_pharma rapid_test_cost
+11:0.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | all_ways_of_protection what_is_athena what_is_ilsp
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost collective_ways_of_protection covid_stats find_new_icus personal_ways_of_protection
+7:0.0:0.1111111111111111 | test_types
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost am_i_ill test_types collective_ways_of_protection what_to_do_if_positive find_new_icus
+0:0.0:0.14285714285714285 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost mask_faq whats_your_name vaccine_stats all_test_cost pharma_search what_to_do_if_positive why_avoid_pharma personal_ways_of_protection
+5:0.0:0.125 | symptoms
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost why_theano mask_faq whats_your_name what_is_athena what_to_do_if_positive find_new_icus all_ways_of_protection
+8:0.0:0.1111111111111111 | underlying_conditions
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| no_action
+
+shared | covid_stats general_knowledge_tests
+5:0.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines what_is_ilsp mask_faq general_knowledge_tests
+8:0.0:0.07692307692307693 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | EODY_faq test_cost collective_ways_of_protection symptoms what_is_ilsp ask_chitchat
+11:1.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| underlying_conditions
+| no_action
+
+shared | vaccines why_avoid_pharma general_knowledge_tests
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive find_new_icus pharma_search test_types
+5:1.0:0.1111111111111111 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena vaccines pharma_search covid_stats what_is_ilsp symptoms
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | mask_faq what_is_athena collective_ways_of_protection personal_ways_of_protection what_is_ilsp all_ways_of_protection
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats why_theano test_types
+9:0.0:0.09090909090909091 | vaccine_stats_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name test_types what_to_do_if_positive why_avoid_pharma ask_chitchat
+0:1.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pharma_search self_test what_to_do_if_positive find_new_icus covid_stats ask_chitchat
+2:0.0:0.1111111111111111 | ill_questionnaire_form
+| vaccine_stats_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | find_new_icus why_theano
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats all_test_cost test_types covid_stats all_ways_of_protection
+1:0.0:0.1111111111111111 | icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | whats_your_name collective_ways_of_protection ways_of_protection covid_stats find_new_icus
+7:1.0:0.1 | test_types
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats vaccines all_test_cost underlying_conditions covid_stats what_is_ilsp
+2:0.0:0.1111111111111111 | ill_questionnaire_form
+| icu_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | whats_your_name what_is_athena self_test ways_of_protection covid_stats what_is_ilsp symptoms
+3:1.0:0.1 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | what_is_ilsp
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search what_to_do_if_positive why_avoid_pharma find_new_icus what_is_ilsp general_knowledge_tests
+0:0.0:0.1 | covid_statistics_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | why_theano
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | covid_stats find_new_icus what_is_athena what_is_ilsp
+6:1.0:0.09090909090909091 | test_cost
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name test_types test_cost what_is_ilsp ask_chitchat
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | personal_ways_of_protection
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq whats_your_name what_is_athena all_test_cost self_test test_cost what_is_ilsp ask_chitchat rapid_test_cost
+3:0.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | why_theano vaccines all_test_cost am_i_ill covid_stats find_new_icus
+7:1.0:0.1111111111111111 | test_types
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats test_cost
+1:1.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | ask_chitchat pharma_search
+6:1.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano mask_faq whats_your_name vaccines what_to_do_if_positive personal_ways_of_protection
+1:1.0:0.09090909090909091 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+0:1.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search ways_of_protection
+0:0.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_avoid_pharma
+4:1.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name
+6:0.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena covid_stats underlying_conditions ask_chitchat
+6:0.0:0.09090909090909091 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | personal_ways_of_protection
+1:0.0:0.08333333333333333 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost covid_stats general_knowledge_tests collective_ways_of_protection
+1:0.0:0.1 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost whats_your_name collective_ways_of_protection
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | find_new_icus whats_your_name what_is_athena
+9:0.0:0.08333333333333333 | vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat covid_stats general_knowledge_tests ways_of_protection
+2:0.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost whats_your_name vaccine_stats what_is_athena all_test_cost covid_stats personal_ways_of_protection what_is_ilsp symptoms general_knowledge_tests
+4:0.0:0.125 | pharmacy_form
+| icu_stats_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | test_types
+10:0.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | ask_chitchat what_to_do_if_positive
+6:0.0:0.08333333333333333 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost whats_your_name ask_chitchat general_knowledge_tests
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | collective_ways_of_protection covid_stats why_avoid_pharma find_new_icus all_ways_of_protection
+5:0.0:0.1 | symptoms
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat what_to_do_if_positive pharma_search pcr_test_cost
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| underlying_conditions
+| no_action
+
+shared | pharma_search
+10:0.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats what_is_athena test_cost
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | why_theano rapid_test_cost vaccine_stats
+11:0.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | covid_stats rapid_test_cost vaccine_stats ways_of_protection
+3:0.0:0.1 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | mask_faq test_types test_cost
+3:0.0:0.09090909090909091 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq all_test_cost pharma_search am_i_ill covid_stats what_to_do_if_positive personal_ways_of_protection
+1:0.0:0.14285714285714285 | icu_stats_form
+| vaccine_stats_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccines test_types what_to_do_if_positive covid_stats general_knowledge_tests
+10:0.0:0.1 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+4:0.0:0.07692307692307693 | pharmacy_form
+| icu_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | mask_faq personal_ways_of_protection what_is_athena collective_ways_of_protection
+4:0.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name pharma_search test_types test_cost underlying_conditions why_avoid_pharma rapid_test_cost
+2:1.0:0.1111111111111111 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | pharma_search
+8:1.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | general_knowledge_tests
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | all_test_cost general_knowledge_tests
+7:1.0:0.08333333333333333 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena vaccines pharma_search test_types covid_stats ask_chitchat
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats pharma_search underlying_conditions covid_stats rapid_test_cost general_knowledge_tests
+11:1.0:0.125 | what_to_do_if_positive
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| no_action
+
+shared | why_theano self_test underlying_conditions find_new_icus all_ways_of_protection
+2:0.0:0.1 | ill_questionnaire_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost why_theano pharma_search underlying_conditions why_avoid_pharma rapid_test_cost general_knowledge_tests
+7:1.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| no_action
+
+shared | ask_chitchat what_is_ilsp
+6:1.0:0.07692307692307693 | test_cost
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano self_test am_i_ill
+0:1.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | symptoms all_test_cost am_i_ill
+4:1.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost
+10:1.0:0.07692307692307693 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+| no_action
+
+shared | covid_stats mask_faq test_cost
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat all_ways_of_protection covid_stats symptoms
+11:1.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq vaccines ask_chitchat why_theano
+1:1.0:0.07692307692307693 | icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name am_i_ill ask_chitchat personal_ways_of_protection symptoms rapid_test_cost general_knowledge_tests
+4:0.0:0.1111111111111111 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats self_test collective_ways_of_protection why_avoid_pharma all_ways_of_protection symptoms
+6:0.0:0.1 | test_cost
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name vaccine_stats what_is_athena all_test_cost collective_ways_of_protection what_to_do_if_positive why_avoid_pharma personal_ways_of_protection general_knowledge_tests
+2:0.0:0.1111111111111111 | ill_questionnaire_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | 
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | rapid_test_cost what_is_athena
+0:1.0:0.08333333333333333 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | vaccines self_test test_cost test_types find_new_icus personal_ways_of_protection rapid_test_cost
+5:1.0:0.1111111111111111 | symptoms
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search whats_your_name
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive what_is_athena what_is_ilsp
+4:1.0:0.08333333333333333 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats am_i_ill
+1:1.0:0.09090909090909091 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | mask_faq
+7:1.0:0.07692307692307693 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | collective_ways_of_protection
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq mask_faq pharma_search underlying_conditions what_is_ilsp ask_chitchat general_knowledge_tests
+0:0.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | why_theano what_is_athena self_test covid_stats personal_ways_of_protection ask_chitchat
+2:1.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ways_of_protection
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost mask_faq vaccines pharma_search collective_ways_of_protection why_avoid_pharma symptoms general_knowledge_tests
+0:0.0:0.1111111111111111 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name what_is_athena self_test ways_of_protection all_ways_of_protection what_is_ilsp ask_chitchat
+3:1.0:0.08333333333333333 | no_action
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | EODY_faq whats_your_name all_test_cost what_to_do_if_positive symptoms ask_chitchat rapid_test_cost
+9:0.0:0.1 | vaccine_stats_form
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| underlying_conditions
+| no_action
+
+shared | vaccine_stats
+3:1.0:0.07692307692307693 | no_action
+| icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | ask_chitchat vaccine_stats what_is_ilsp
+1:1.0:0.08333333333333333 | icu_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats vaccine_stats what_is_athena
+3:1.0:0.09090909090909091 | no_action
+| icu_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | pcr_test_cost whats_your_name all_test_cost pharma_search collective_ways_of_protection what_is_ilsp
+5:1.0:0.1 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena all_test_cost what_to_do_if_positive covid_stats find_new_icus personal_ways_of_protection what_is_ilsp ask_chitchat
+9:0.0:0.125 | vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| underlying_conditions
+| no_action
+
+shared | self_test ways_of_protection what_is_ilsp symptoms general_knowledge_tests
+11:1.0:0.09090909090909091 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | what_to_do_if_positive covid_stats
+5:1.0:0.08333333333333333 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+| no_action
+
+shared | why_theano test_cost covid_stats find_new_icus all_ways_of_protection
+5:0.0:0.1111111111111111 | symptoms
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq why_theano what_is_athena what_to_do_if_positive personal_ways_of_protection what_is_ilsp ask_chitchat
+0:1.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | covid_stats what_is_ilsp what_to_do_if_positive
+5:1.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | vaccines what_to_do_if_positive
+2:0.0:0.08333333333333333 | ill_questionnaire_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | all_ways_of_protection covid_stats general_knowledge_tests collective_ways_of_protection
+7:0.0:0.09090909090909091 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq pcr_test_cost vaccine_stats find_new_icus all_ways_of_protection
+4:1.0:0.1111111111111111 | pharmacy_form
+| covid_statistics_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search mask_faq vaccine_stats
+10:1.0:0.1 | ways_of_protection
+| icu_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | collective_ways_of_protection ways_of_protection
+11:1.0:0.08333333333333333 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost mask_faq what_is_athena am_i_ill covid_stats what_is_ilsp
+7:0.0:0.1 | test_types
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | ask_chitchat rapid_test_cost whats_your_name collective_ways_of_protection
+8:1.0:0.09090909090909091 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| what_to_do_if_positive
+| no_action
+
+shared | vaccine_stats what_is_athena pharma_search self_test covid_stats what_is_ilsp ask_chitchat
+11:0.0:0.1 | what_to_do_if_positive
+| icu_stats_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | covid_stats pharma_search what_is_athena what_is_ilsp
+10:0.0:0.09090909090909091 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | why_theano whats_your_name all_test_cost ways_of_protection ask_chitchat
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost what_is_athena collective_ways_of_protection test_types underlying_conditions find_new_icus symptoms all_ways_of_protection what_is_ilsp ask_chitchat
+0:0.0:0.14285714285714285 | covid_statistics_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| what_to_do_if_positive
+| no_action
+
+shared | covid_stats why_avoid_pharma what_is_ilsp
+8:0.0:0.08333333333333333 | underlying_conditions
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| no_action
+
+shared | pcr_test_cost why_theano test_cost covid_stats all_ways_of_protection symptoms ask_chitchat
+1:0.0:0.1111111111111111 | icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | EODY_faq personal_ways_of_protection symptoms
+0:1.0:0.09090909090909091 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name am_i_ill what_to_do_if_positive underlying_conditions ask_chitchat
+4:0.0:0.1 | pharmacy_form
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| no_action
+
+shared | what_to_do_if_positive why_theano
+10:1.0:0.08333333333333333 | ways_of_protection
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq self_test
+0:0.0:0.07692307692307693 | covid_statistics_form
+| icu_stats_form
+| vaccine_stats_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | pharma_search collective_ways_of_protection ways_of_protection what_to_do_if_positive covid_stats
+5:1.0:0.1111111111111111 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| ill_questionnaire_form
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | pcr_test_cost what_is_athena vaccines self_test collective_ways_of_protection what_is_ilsp ask_chitchat
+5:0.0:0.09090909090909091 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | find_new_icus self_test
+3:0.0:0.08333333333333333 | no_action
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+
+shared | vaccine_stats all_test_cost pharma_search am_i_ill ways_of_protection why_avoid_pharma general_knowledge_tests
+5:0.0:0.125 | symptoms
+| icu_stats_form
+| covid_statistics_form
+| test_types
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | whats_your_name
+5:0.0:0.07692307692307693 | symptoms
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+
+shared | what_is_athena pharma_search covid_stats find_new_icus what_is_ilsp all_ways_of_protection
+11:0.0:0.1111111111111111 | what_to_do_if_positive
+| vaccine_stats_form
+| ill_questionnaire_form
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | 
+11:1.0:0.07692307692307693 | what_to_do_if_positive
+| icu_stats_form
+| vaccine_stats_form
+| covid_statistics_form
+| pharmacy_form
+| ill_questionnaire_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| underlying_conditions
+| no_action
+
+shared | EODY_faq covid_stats ask_chitchat vaccine_stats
+2:0.0:0.09090909090909091 | ill_questionnaire_form
+| icu_stats_form
+| pharmacy_form
+| ways_of_protection
+| symptoms
+| test_types
+| test_cost
+| what_to_do_if_positive
+| underlying_conditions
+| no_action
+

@@ -1,14 +1,18 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import List
+
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
+from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import ForeignKey
 import sqlalchemy.sql.functions as func
-from typing import List
 
-from .database import Base
+
+class Base(DeclarativeBase):
+    pass
 
 
 class EvaluationDialoguesDB(Base):

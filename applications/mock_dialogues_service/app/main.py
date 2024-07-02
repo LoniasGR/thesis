@@ -4,10 +4,9 @@ from fastapi import FastAPI, Request, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.exceptions import HTTPException
-from sqlalchemy import null
 from sqlalchemy.orm import Session
 
-from utils.helpers import get_all_intents
+from common.helpers import get_all_intents
 from utils.generate_dialogues import (
     generate_dialogue,
     create_user_utterances,

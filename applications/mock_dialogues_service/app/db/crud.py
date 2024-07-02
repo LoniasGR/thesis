@@ -1,4 +1,3 @@
-from sqlalchemy import Sequence
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 import sqlalchemy.sql.functions as func
@@ -53,9 +52,6 @@ def update_evaluation_answer(db: Session, uuid: str, answer: bool):
 
 
 def create_evaluation(db: Session, ev: schemas.Evaluation) -> models.EvaluationDB:
-    for pr in ev.user:
-        r = models.EvaluationDialoguesDB()
-
     db_evaluation = models.EvaluationDB(
         uuid=ev.uuid,
         suggestion=ev.suggestion,
