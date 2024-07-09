@@ -1,0 +1,40 @@
+.clickable {
+  cursor: pointer;
+  display: flex;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.user {
+  margin: 0.5rem;
+  padding: 0.3rem 0.7rem 0;
+}
+
+.user-question {
+  padding-right: 2px;
+}
+
+.user-open {
+  transition: all 1s ease-in-out;
+}
+
+.reply {
+  padding: 1rem 1rem 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .user .bold {
+    color: #0092cc;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .user-question {
+    color: rgb(16, 67, 119);
+  }
+  .reply .bold {
+    color: rgb(119, 100, 16);
+  }
+}

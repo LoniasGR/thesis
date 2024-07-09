@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from enum import Enum
 
 
 class HealthCheck(BaseModel):
@@ -24,9 +25,14 @@ class Client(BaseModel):
         from_attributes = True
 
 
+class ResponseSelection(Enum):
+    RANDOM = 1
+    SMART = 2
+
+
 class ComparisonBase(BaseModel):
     uuid: str | None
-    response: bool | None
+    response: ResponseSelection | None
 
     class Config:
         from_attributes = True

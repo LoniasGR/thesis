@@ -10,6 +10,8 @@ from sqlalchemy.orm import relationship
 from sqlalchemy import ForeignKey
 import sqlalchemy.sql.functions as func
 
+from models.schemas import ResponseSelection
+
 
 class Base(DeclarativeBase):
     pass
@@ -32,7 +34,7 @@ class ComparisonsDB(Base):
     __tablename__ = "comparisons"
 
     uuid: Mapped[str] = mapped_column(primary_key=True)
-    response: Mapped[bool] = mapped_column(nullable=True)
+    response: Mapped[ResponseSelection] = mapped_column(nullable=True)
     date_asked: Mapped[datetime] = mapped_column(default=func.now())
     date_answered: Mapped[datetime] = mapped_column(nullable=True)
     random_intent: Mapped[str] = mapped_column(nullable=False)

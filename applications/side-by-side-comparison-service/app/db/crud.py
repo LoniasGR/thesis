@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
+import sqlalchemy.sql.functions as func
 
 from . import models
 import models.schemas as schemas
@@ -8,6 +9,12 @@ import models.schemas as schemas
 def get_user_dialogue_by_intent(db: Session, intent: str):
     return db.scalar(
         select(models.UserDialogueDB).where(models.UserDialogueDB.intent == intent)
+    )
+
+
+def get_comparison_by_id(db: Session, uuid: str):
+    return db.scalar(
+        select(models.ComparisonsDB).where(models.ComparisonsDB.uuid == uuid)
     )
 
 
@@ -68,3 +75,18 @@ def create_or_get_client(db: Session, host: str):
     if existing != None:
         return existing
     return create_client(db, host)
+
+
+def update_comparison_answer(
+    db: Session, uuid: str, response: schemas.ResponseSelection
+):
+    db_cmp = get_comparison_by_id(db, uuid)
+    if db_cmp == None:
+        return None
+
+    db_cmp.response = response
+    db_cmp.date_answered = func.now()
+
+    db.commit()
+    db.refresh(db_cmp)
+    return db_cmp

@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Request, status, Depends
+from fastapi.middleware.cors import CORSMiddleware
 
 import models.schemas as schemas
 import db.models as models
@@ -6,7 +7,9 @@ import db.crud as crud
 import client.client as services
 from logger.logger import CustomLogger
 from db.database import SessionLocal, engine
-from client.client import create_side_by_side
+from fastapi.exceptions import HTTPException
+
+from utils.utils import getHost
 
 models.Base.metadata.create_all(bind=engine)
 logger: CustomLogger = CustomLogger(__name__)
@@ -22,13 +25,18 @@ def get_db():
 
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/comparison", response_model=schemas.ComparisonSuggestion)
 def get_comparison(request: Request, db=Depends(get_db)):
-    host = request.headers["Host"]
-    if "x-forwared-for" in request.headers:
-        host = request.headers["x-forwared-for"]
+    host = getHost(request.headers)
 
     client = crud.create_or_get_client(db, host=host)
     suggestion = services.create_side_by_side(db)
@@ -39,8 +47,11 @@ def get_comparison(request: Request, db=Depends(get_db)):
 
 
 @app.post("/selection")
-def post_selection():
-    pass
+def post_selection(cmp: schemas.ComparisonBase, db=Depends(get_db)):
+    new_ev = crud.update_comparison_answer(db, cmp.uuid, cmp.response)
+    if new_ev == None:
+        raise HTTPException(status_code=400, detail="Wrong evaluation id")
+    return new_ev
 
 
 @app.get(

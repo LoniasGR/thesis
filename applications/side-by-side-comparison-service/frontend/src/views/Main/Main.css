@@ -1,0 +1,38 @@
+.main-title {
+  text-align: center;
+}
+
+.dialogue-container {
+  border: 2px white solid;
+  border-radius: 25px;
+  max-width: 75%;
+  margin-inline: auto;
+}
+
+.dialogue {
+  list-style-type: none; /* Remove bullets */
+  max-width: fit-content;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.suggestions-container {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+div.suggestions-container > div {
+  max-width: 20rem;
+}
+
+.selection {
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
