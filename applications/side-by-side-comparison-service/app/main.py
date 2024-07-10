@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request, status, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 import models.schemas as schemas
 import db.models as models
@@ -32,6 +33,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+class SPAStaticFiles(StaticFiles):
+    async def get_response(self, path: str, scope):
+        try:
+            return await super().get_response(path, scope)
+        except HTTPException as ex:
+            if ex.status_code == 404:
+                return await super().get_response("index.html", scope)
+            else:
+                raise ex
 
 
 @app.get("/comparison", response_model=schemas.ComparisonSuggestion)
@@ -73,3 +85,6 @@ def get_health() -> schemas.HealthCheck:
         HealthCheck: Returns a JSON response with the health status
     """
     return schemas.HealthCheck(status="OK")
+
+
+app.mount("/", SPAStaticFiles(directory="frontend/dist", html=True), name="app")

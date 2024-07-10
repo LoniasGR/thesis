@@ -1,17 +1,18 @@
 services:
   fastapi:
-    image: mock-dialogues-service
+    image: side-by-side-comparison
     build: .
     ports:
-      - 8123:80
+      - 8104:80
     environment:
       - UID=${USID}
       - GID=${GID}
       - DB_URL=sqlite:///./production.db
-    container_name: mock-dialogues-service
-    hostname: mock-dialogues-service
+      - MOCK_DIALOGUES_URL=http://mock-dialogues-service
+      - SMART_SUGGEST_MICROSERVICE_URL=http://smart-suggest-microservice
+    container_name: side-by-side-comparison
+    hostname: side-by-side-comparison
     volumes:
-      - ./rl_hf.dat:/code/app/rl_hf.dat
       - ./production.db:/code/app/production.db
     restart: always
 

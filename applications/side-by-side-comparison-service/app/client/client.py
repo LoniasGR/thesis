@@ -3,7 +3,7 @@ import uuid
 from sqlalchemy.orm import Session
 import httpx
 
-
+from logger.logger import CustomLogger
 import utils.utils as utils
 import db.crud as crud
 import db.models as models
@@ -13,6 +13,9 @@ from common.helpers import (
     get_functionalities_from_intents,
     get_functionality_proposal_from_intent,
 )
+
+logger: CustomLogger = CustomLogger(__name__)
+
 
 MOCK_DIALOGUES_URL = utils.envOrDefault("MOCK_DIALOGUES_URL", "http://localhost:8123")
 SMART_SUGGEST_MICROSERVICE_URL = utils.envOrDefault(
@@ -24,7 +27,10 @@ def get_random_dialogues(length=1) -> list[dict]:
     params = {"dialogues": length}
     headers = {"x-forwarded-for": "127.0.0.1"}
     url = f"{MOCK_DIALOGUES_URL}/generate"
+    logger.debug(f"Requesting mock dialogues from {url}")
     r = httpx.get(url, params=params, headers=headers)
+
+    logger.debug(f"Response is {r}")
 
     return r.json()
 

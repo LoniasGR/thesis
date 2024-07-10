@@ -1,7 +1,16 @@
-.button-container {
+button.button-container {
   border: 1px white solid;
   padding: 1rem;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.button-conta
+button.button-container:hover {
+  color: black;
+  background-color: #0092cc;
+  cursor: pointer;
+}

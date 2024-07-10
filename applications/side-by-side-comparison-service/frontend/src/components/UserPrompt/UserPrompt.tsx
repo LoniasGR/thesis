@@ -57,7 +57,7 @@ export function UserPrompt({
       elem.removeEventListener("touchend", onTouchEnd);
     };
 
-    const onTouchStart = (e) => {
+    const onTouchStart = (e: TouchEvent) => {
       e.preventDefault();
       startTouchPosY = e.changedTouches[0].clientY;
       startTouchPosX = e.changedTouches[0].clientX;

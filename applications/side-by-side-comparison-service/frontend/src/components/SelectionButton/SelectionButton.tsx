@@ -19,16 +19,15 @@ export function SelectionButton({
 }: SelectionButtonProps) {
   const onClick = () => {
     postResponse(uuid, selection)
-      .then((d) => updateCounter())
+      .then(() => updateCounter())
       .catch((e: unknown) => {
         console.error(e);
       });
   };
 
   return (
-    <p>{utterance}</p>
-    <ButtonBase onClick={onClick}>
-      Επιλογή
+    <ButtonBase onClick={onClick} className="button-container">
+      <p>{utterance}</p>
     </ButtonBase>
   );
 }

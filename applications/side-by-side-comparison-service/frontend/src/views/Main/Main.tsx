@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Main = () => {
   const [counter, setCounter] = useState(0);
-  const { data: d, err, loading, setUrl } = useAPI(comparisonURL, [counter]);
+  const { data: d, loading: loading } = useAPI(comparisonURL, [counter]);
   const data: Comparison = d as unknown as Comparison;
 
   const incrCounter = () => {
