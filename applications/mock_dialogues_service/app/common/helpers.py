@@ -1,8 +1,10 @@
+from __future__ import annotations
+
 from .mappings import (
     intent_to_functionality_dict,
-    list_of_functionalities,
     limited_intent_to_functionality_dict,
     limited_intent_to_response_dict,
+    list_of_functionalities,
 )
 
 
@@ -16,13 +18,11 @@ def get_functionalities_from_intents(intents):
 
 def get_actions(data):
     previous_slot_values = list(
-        set(
-            [
-                x["value"]
-                for x in data
-                if x["event"] == "slot" and x["name"] == "bot_suggestion"
-            ]
-        )
+        {
+            x["value"]
+            for x in data
+            if x["event"] == "slot" and x["name"] == "bot_suggestion"
+        }
     )
 
     user_events = [x for x in data if x["event"] == "user"]
@@ -49,7 +49,9 @@ def get_actions(data):
     )
 
 
-def generate_remaining_suggestions(functionalities, slot_values=[]):
+def generate_remaining_suggestions(functionalities, slot_values=None):
+    if slot_values is None:
+        slot_values = []
     return [
         f
         for f in list_of_functionalities
@@ -58,15 +60,15 @@ def generate_remaining_suggestions(functionalities, slot_values=[]):
 
 
 def remove_useless_intents(intents: list[str]):
-    clean_intents = list()
+    clean_intents = []
     for i in intents:
         if "+" in i:
             clean_intents += i.split("+")
         else:
             clean_intents.append(i)
     return list(
-        set(
-            [
+        {
+            
                 x
                 for x in clean_intents
                 if x
@@ -88,14 +90,14 @@ def remove_useless_intents(intents: list[str]):
                     "sorry",
                     "no_action",
                 ]
-            ]
-        )
+            
+        }
     )
 
 
 def get_unique_functionalities():
     functionalities = intent_to_functionality_dict.values()
-    return sorted(list(set(functionalities)))
+    return sorted(set(functionalities))
 
 
 def get_response_from_intent(intent):

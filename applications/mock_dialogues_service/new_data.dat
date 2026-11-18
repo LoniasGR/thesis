@@ -1,4 +1,4 @@
-shared | all_test_cost pharma_search self_test test_types covid_stats ask_chitchat what_is_ilsp all_ways_of_protection general_knowledge_tests
+ shared | all_test_cost pharma_search self_test test_types covid_stats ask_chitchat what_is_ilsp all_ways_of_protection general_knowledge_tests
 8:0.0:0.125 | underlying_conditions
 | icu_stats_form
 | vaccine_stats_form

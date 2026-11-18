@@ -1,3 +1,5 @@
+import random
+
 intent_to_functionality_dict = {
     "covid_stats": "covid_statistics_form",
     "EODY_faq": "no_action",
@@ -154,6 +156,67 @@ limited_intent_to_dialogue_dict = {
     "no_action": "no_action",
 }
 
+useful_intents = [
+    "covid_stats",
+    "EODY_faq",
+    "ask_chitchat",
+    "mask_faq",
+    "vaccines",
+    "pharma_search",
+    "am_i_ill",
+    "why_avoid_pharma",
+    "what_to_do_if_positive",
+    "symptoms",
+    "ways_of_protection",
+    "underlying_conditions",
+    "personal_ways_of_protection",
+    "collective_ways_of_protection",
+    "all_ways_of_protection",
+    "test_cost",
+    "vaccine_stats",
+    "find_new_icus",
+]
+
+intent_to_suggestion_popularity_baseline = {
+    "vaccines": ["test_cost", "no_action"],
+    "out_of_scope": ["no_action"],
+    "pharma_search": ["no_action"],
+    "covid_stats": [
+        "underlying_conditions",
+        "no_action",
+        "test_types",
+        "test_cost",
+        "symptoms",
+        "ill_questionnaire_form",
+    ],
+    "EODY_faq": ["no_action"],
+    "rapid_test_cost": [
+        "vaccine_stats_form",
+        "no_action",
+        "test_types",
+        "what_to_do_if_positive",
+    ],
+    "whats_your_name": ["icu_stats_form"],
+    "time_declare": ["test_types", "icu_stats_form"],
+    "negative": ["no_action"],
+    "vaccine_stats": ["ways_of_protection", "test_types", "test_cost"],
+    "ask_chitchat": ["no_action"],
+    "insult": ["pharmacy_form", "icu_stats_form", "symptoms"],
+    "affirmative": ["vaccine_stats_form"],
+    "didnt_understand": ["no_action", "vaccine_stats_form"],
+    "region_declare": ["no_action", "what_to_do_if_positive"],
+    "self_test": ["no_action", "icu_stats_form"],
+    "mask_faq": ["what_to_do_if_positive"],
+    "personal_ways_of_protection": ["no_action"],
+    "all_of_them": ["no_action", "test_cost"],
+    "what_is_athena": ["test_types", "vaccine_stats_form"],
+    "collective_ways_of_protection": ["test_cost"],
+    "what_to_do_if_positive": ["test_types"],
+    "find_new_icus": ["icu_stats_form"],
+    "greetings+ask_chitchat": ["no_action"],
+    "why_avoid_pharma": ["no_action"],
+}
+
 limited_intent_to_response_dict = {
     "covid_stats": "Σήμερα συνολικά υπήρξαν 0 νέα κρούσματα με συνολικό αριθμό κρουσμάτων 503302.",
     "EODY_faq": "Για πληροφορίες σχετικά με τον κορωνοϊό μπορείς να καλέσεις στο τηλέφωνο του ΕΟΔΥ 1135 όλο το εικοσιτετράωρο.",
@@ -229,5 +292,10 @@ functionality_proposal = {
     "symptoms": "Να σου πω ποια είναι τα κύρια συμπτώματα του κορωνοϊού;",
     "vaccine_stats_form": "Θέλεις να μάθεις για την εξέλιξη των εμβολιασμών στην Ελλάδα;",
     "icu_stats_form": "Ξέρω και για τις ΜΕΘ. Θέλεις να μάθεις για τη διαθεσιμότητα που υπάρχει;",
-    "no_action": "Τα έχουμε πει όλα.",  # Or sth similar
+    "no_action": [
+        "Θα ήθελες να σε βοηθήσω με κάτι άλλο;",
+        "Μπορώ να σε βοηθήσω κάπως αλλιώς;",
+        "Πως αλλιώς θα μπορούσα να σε βοηθήσω;",
+        "Θέλεις να σε βοηθήσω με κάτι άλλο;",
+    ],  # Or sth similar
 }

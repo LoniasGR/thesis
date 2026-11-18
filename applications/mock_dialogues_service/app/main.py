@@ -19,7 +19,6 @@ import db.crud as crud, db.models as models
 import models.schemas as schemas
 from logger.logger import CustomLogger
 
-
 models.Base.metadata.create_all(bind=engine)
 logger: CustomLogger = CustomLogger(__name__)
 
@@ -77,7 +76,7 @@ def generate(request: Request, dialogues: int = 3, db: Session = Depends(get_db)
 
     client = crud.create_or_get_client(db, host=host)
 
-    ret_data = list()
+    ret_data = []
     for d in range(dialogues):
         user = generate_dialogue()
         uttsDB = crud.get_user_dialogues_by_intent_list(db, user)

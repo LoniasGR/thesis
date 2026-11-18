@@ -1,90 +1,109 @@
-from fastapi import FastAPI, Request, status, Depends
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
+import logging
+import random
+import sys
+import uuid
 
-import models.schemas as schemas
-import db.models as models
-import db.crud as crud
-import client.client as services
-from logger.logger import CustomLogger
-from db.database import SessionLocal, engine
-from fastapi.exceptions import HTTPException
-
-from utils.utils import getHost
+from client import client
+from common.helpers import get_actions
+from common.mappings import (
+    functionality_proposal,
+    intent_to_suggestion_popularity_baseline,
+)
+from db import models
+from db.database import engine
+from sqlalchemy.orm import Session
+from utils.utils import shouldPrint
 
 models.Base.metadata.create_all(bind=engine)
-logger: CustomLogger = CustomLogger(__name__)
+logger: logging.Logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+output = shouldPrint(True)
 
 
-# Dependency
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+def loop():
+    client.initialize_genai_chat()
+    result = client.get_random_dialogues()
+    state = result["state"]
+    dialogue = result["dialogue"]
+    actions_data = get_actions(state["events"])
+    if result["suggest"]:
+        print("Previous slot value:", actions_data["previous_slot_values"])
+        print("Previous intents:", actions_data["previous_intents"])
+        smart_suggestion = actions_data["previous_slot_values"][-1]
+        actions_data["remaining_suggestions"].append(
+            actions_data["previous_slot_values"][-1]
+        )
+        actions_data["previous_slot_values"].pop(-1)
+        random_suggestion = random.choice(actions_data["remaining_suggestions"])
+        llm_suggestion = client.get_generated_suggestion(dialogue)
+        popularity_suggestion = random.choice(
+            intent_to_suggestion_popularity_baseline[
+                actions_data["previous_intents"][-1]
+            ]
+        )
+        suggestions = {
+            "random": {
+                "utt": (
+                    random.choice(functionality_proposal[random_suggestion])
+                    if "no_action" == random_suggestion
+                    else functionality_proposal[random_suggestion]
+                ),
+                "intent": random_suggestion,
+            },
+            "smart": {
+                "utt": (
+                    random.choice(functionality_proposal[smart_suggestion])
+                    if "no_action" == smart_suggestion
+                    else functionality_proposal[smart_suggestion]
+                ),
+                "intent": smart_suggestion,
+            },
+            # "llm": {
+                # "utt": functionality_proposal[llm_suggestion["suggestion"]],
+                # "intent": llm_suggestion["suggestion"],
+            # },
+            "popularity": {
+                "utt": (
+                    random.choice(functionality_proposal[popularity_suggestion])
+                    if "no_action" == popularity_suggestion
+                    else functionality_proposal[popularity_suggestion]
+                ),
+                "intent": popularity_suggestion,
+            },
+        }
+        output(f"Suggestions: {suggestions}")
+        assessed_suggestion = client.assess_suggestions(dialogue, suggestions)
+        output(f"Assessed suggestion: {assessed_suggestion}")
+    with Session(engine) as session:
+
+        if result["suggest"] == False:
+            session.add(
+                models.DialogueDB(
+                    uuid=str(uuid.uuid4()),
+                    dialogue="\n".join(dialogue),
+                    goal="\n".join(result["goal"]),
+                )
+            )
+        else:
+            session.add(
+                models.DialogueDB(
+                    uuid=str(uuid.uuid4()),
+                    dialogue="\n".join(dialogue),
+                    goal="\n".join(result["goal"]),
+                    smart_suggestion=smart_suggestion,
+                    random_suggestion=random_suggestion,
+                    popularity_suggestion=popularity_suggestion,
+                    # llm_suggestion=llm_suggestion["suggestion"],
+                    choice=assessed_suggestion["picked"],
+                    choice_reason=assessed_suggestion["reasoning"],
+                )
+            )
+        session.commit()
 
 
-app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+if __name__ == "__main__":
+    from tqdm import tqdm
 
-
-class SPAStaticFiles(StaticFiles):
-    async def get_response(self, path: str, scope):
-        try:
-            return await super().get_response(path, scope)
-        except HTTPException as ex:
-            if ex.status_code == 404:
-                return await super().get_response("index.html", scope)
-            else:
-                raise ex
-
-
-@app.get("/comparison", response_model=schemas.ComparisonSuggestion)
-def get_comparison(request: Request, db=Depends(get_db)):
-    host = getHost(request.headers)
-
-    client = crud.create_or_get_client(db, host=host)
-    suggestion = services.create_side_by_side(db)
-
-    crud.create_suggestion(db, suggestion, client)
-
-    return suggestion
-
-
-@app.post("/selection")
-def post_selection(cmp: schemas.ComparisonBase, db=Depends(get_db)):
-    new_ev = crud.update_comparison_answer(db, cmp.uuid, cmp.response)
-    if new_ev == None:
-        raise HTTPException(status_code=400, detail="Wrong evaluation id")
-    return new_ev
-
-
-@app.get(
-    "/health",
-    tags=["healthcheck"],
-    summary="Perform a Health Check",
-    response_description="Return HTTP Status Code 200 (OK)",
-    status_code=status.HTTP_200_OK,
-    response_model=schemas.HealthCheck,
-)
-def get_health() -> schemas.HealthCheck:
-    """
-    ## Perform a Health Check
-    Endpoint to perform a healthcheck on. This endpoint can primarily be used Docker
-    to ensure a robust container orchestration and management is in place. Other
-    services which rely on proper functioning of the API service will not deploy if this
-    endpoint returns any other HTTP status code except 200 (OK).
-    Returns:
-        HealthCheck: Returns a JSON response with the health status
-    """
-    return schemas.HealthCheck(status="OK")
-
-
-app.mount("/", SPAStaticFiles(directory="frontend/dist", html=True), name="app")
+    for i in tqdm(range(int(sys.argv[1]))):
+        loop()

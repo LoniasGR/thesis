@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM registry.digigov.grnet.gr/dockerhub-cache/python:3.10
 
 WORKDIR /code/app
 

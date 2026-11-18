@@ -1,9 +1,9 @@
 from .mappings import (
+    functionality_proposal,
     intent_to_functionality_dict,
-    list_of_functionalities,
     limited_intent_to_functionality_dict,
     limited_intent_to_response_dict,
-    functionality_proposal,
+    list_of_functionalities,
 )
 
 
@@ -17,13 +17,11 @@ def get_functionalities_from_intents(intents):
 
 def get_actions(data):
     previous_slot_values = list(
-        set(
-            [
-                x["value"]
-                for x in data
-                if x["event"] == "slot" and x["name"] == "bot_suggestion"
-            ]
-        )
+        {
+            x["value"]
+            for x in data
+            if x["event"] == "slot" and x["name"] == "bot_suggestion"
+        }
     )
 
     user_events = [x for x in data if x["event"] == "user"]
@@ -43,14 +41,18 @@ def get_actions(data):
         previous_functionalities_from_intents, previous_slot_values
     )
 
-    return (
-        previous_intents,
-        previous_slot_values,
-        remaining_suggestions,
-    )
+    return {
+        "previous_intents": previous_intents,
+        "previous_slot_values": previous_slot_values,
+        "remaining_suggestions": remaining_suggestions,
+    }
 
 
-def generate_remaining_suggestions(functionalities, slot_values=[]):
+def generate_remaining_suggestions(
+    functionalities, slot_values: list[str] | None = None
+):
+    if slot_values is None:
+        slot_values = []
     return [
         f
         for f in list_of_functionalities
@@ -59,44 +61,42 @@ def generate_remaining_suggestions(functionalities, slot_values=[]):
 
 
 def remove_useless_intents(intents: list[str]):
-    clean_intents = list()
+    clean_intents = []
     for i in intents:
         if "+" in i:
             clean_intents += i.split("+")
         else:
             clean_intents.append(i)
     return list(
-        set(
-            [
-                x
-                for x in clean_intents
-                if x
-                not in [
-                    "time_declare",
-                    "insult",
-                    "affirmative",
-                    "negative",
-                    "greetings",  # maybe tell we haven't greeted ourselves
-                    "stop_executing",
-                    "region_declare",
-                    "goodbye",
-                    "thank_you",
-                    "didnt_understand",
-                    "all_of_them",
-                    "out_of_scope",
-                    "positive_feedback",
-                    "may_i_ask",
-                    "sorry",
-                    "no_action",
-                ]
+        {
+            x
+            for x in clean_intents
+            if x
+            not in [
+                "time_declare",
+                "insult",
+                "affirmative",
+                "negative",
+                "greetings",  # maybe tell we haven't greeted ourselves
+                "stop_executing",
+                "region_declare",
+                "goodbye",
+                "thank_you",
+                "didnt_understand",
+                "all_of_them",
+                "out_of_scope",
+                "positive_feedback",
+                "may_i_ask",
+                "sorry",
+                "no_action",
             ]
-        )
+        }
     )
 
 
 def get_unique_functionalities():
     functionalities = intent_to_functionality_dict.values()
-    return sorted(list(set(functionalities)))
+    return sorted(set(functionalities))
 
 
 def get_response_from_intent(intent):

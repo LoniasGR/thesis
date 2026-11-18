@@ -4,3 +4,10 @@
 [submodule "smart-suggest-microservice"]
 	path = applications/smart-suggest-microservice
 	url = https://gitlab.com/LoniasGR/smart-suggest-microservice
+[submodule "applications/covid-va-chatbot"]
+	path = applications/covid-va-chatbot
+	url = git@gitlab.com:ilsp-spmd-all/public/covid-va-chatbot.git
+	branch = 309-refactor-smart_suggestion-2-abstract-next-topic-suggestion-to-a-separate-function
+[submodule "applications/covid"]
+	path = applications/covid
+	url = git@github.com:LoniasGR/covid.git

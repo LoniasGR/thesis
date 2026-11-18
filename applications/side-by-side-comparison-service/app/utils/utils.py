@@ -1,5 +1,4 @@
 import os
-from fastapi import Request
 
 
 def envOrDefault(variable: str, default: str) -> str:
@@ -10,8 +9,16 @@ def envOrDefault(variable: str, default: str) -> str:
         return ret
 
 
-def getHost(headers: Request.headers) -> str:
+def getHost(headers) -> str:
     host = headers["Host"]
-    if "x-forwared-for" in headers:
-        host = headers["x-forwared-for"]
+    if "x-forwarded-for" in headers:
+        host = headers["x-forwarded-for"]
     return host
+
+
+def shouldPrint(condition):
+    def output(text):
+        if condition:
+            print(text)
+
+    return output

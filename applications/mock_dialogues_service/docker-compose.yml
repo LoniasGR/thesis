@@ -5,8 +5,8 @@ services:
     ports:
       - 8123:80
     environment:
-      - UID=${USID}
-      - GID=${GID}
+      - UID=${USID:-1000}
+      - GID=${GID:-1000}
       - DB_URL=sqlite:///./production.db
     container_name: mock-dialogues-service
     hostname: mock-dialogues-service
@@ -18,4 +18,4 @@ services:
 networks:
   default:
     name: docker_server
-    external: true
+    external: false
