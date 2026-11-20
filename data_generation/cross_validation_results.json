@@ -1,0 +1,321 @@
+{
+  "input_file": "data/conversations-all.json",
+  "folds": 5,
+  "seed": 42,
+  "no_action_probability": 0.5,
+  "selection_metric": "snips_mean_cost",
+  "configurations": [
+    {
+      "cb_type": "ips",
+      "learning_rate": 0.1,
+      "lambda": 10.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.4406842901960784,
+          "ips_standard_error": 0.08639558266278126,
+          "effective_sample_size": 53.45199032611515,
+          "snips_mean_cost": 0.528623540049283
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.4121953260869565,
+          "ips_standard_error": 0.08458472063939368,
+          "effective_sample_size": 37.96314326083161,
+          "snips_mean_cost": 0.558526657297201
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.6361662201834862,
+          "ips_standard_error": 0.15181156692790598,
+          "effective_sample_size": 26.849487812615006,
+          "snips_mean_cost": 0.6245629521401779
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.3756498011695906,
+          "ips_standard_error": 0.11345505797749204,
+          "effective_sample_size": 15.182676605707346,
+          "snips_mean_cost": 0.6169086562915128
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.41585311111111106,
+          "ips_standard_error": 0.1253159715268198,
+          "effective_sample_size": 19.795768552356975,
+          "snips_mean_cost": 0.4492631396335964
+        }
+      ],
+      "ips_mean": 0.45610974974944457,
+      "ips_standard_deviation": 0.10329708881804953,
+      "snips_mean": 0.5555769890823542,
+      "snips_standard_deviation": 0.07169110831135124,
+      "logger_mean": 0.48652944167751005
+    },
+    {
+      "cb_type": "ips",
+      "learning_rate": 0.5,
+      "lambda": 10.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.37573633725490196,
+          "ips_standard_error": 0.09837041116531568,
+          "effective_sample_size": 27.64174177363549,
+          "snips_mean_cost": 0.4957592669535616
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.5348606086956521,
+          "ips_standard_error": 0.1623981932317812,
+          "effective_sample_size": 18.400790198295308,
+          "snips_mean_cost": 0.6328871512239256
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.4054871743119266,
+          "ips_standard_error": 0.11772988704170886,
+          "effective_sample_size": 19.76178533508244,
+          "snips_mean_cost": 0.4797974716127631
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.35928418713450294,
+          "ips_standard_error": 0.12924891330115426,
+          "effective_sample_size": 11.842074186007768,
+          "snips_mean_cost": 0.7181003072500229
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.467375845410628,
+          "ips_standard_error": 0.15659906402952883,
+          "effective_sample_size": 20.579628777689095,
+          "snips_mean_cost": 0.5339107802983087
+        }
+      ],
+      "ips_mean": 0.4285488305615223,
+      "ips_standard_deviation": 0.07233312090502107,
+      "snips_mean": 0.5720909954677164,
+      "snips_standard_deviation": 0.10101639450577042,
+      "logger_mean": 0.48652944167751005
+    },
+    {
+      "cb_type": "ips",
+      "learning_rate": 1.0,
+      "lambda": 1.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.4290109019607843,
+          "ips_standard_error": 0.047808450877161346,
+          "effective_sample_size": 108.89607534490413,
+          "snips_mean_cost": 0.5229095380358015
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.5626249891304348,
+          "ips_standard_error": 0.06849285319376494,
+          "effective_sample_size": 77.56441906451384,
+          "snips_mean_cost": 0.6214811450290393
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.5355867981651375,
+          "ips_standard_error": 0.06819860510962523,
+          "effective_sample_size": 76.19922345236405,
+          "snips_mean_cost": 0.5975204507009731
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.47535782456140346,
+          "ips_standard_error": 0.07142416493433128,
+          "effective_sample_size": 64.65933989082545,
+          "snips_mean_cost": 0.6267505387500812
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.5056897391304348,
+          "ips_standard_error": 0.06676872409548415,
+          "effective_sample_size": 87.48543815297185,
+          "snips_mean_cost": 0.5746321502078634
+        }
+      ],
+      "ips_mean": 0.501654050589639,
+      "ips_standard_deviation": 0.05209052704813093,
+      "snips_mean": 0.5886587645447517,
+      "snips_standard_deviation": 0.04220938314100774,
+      "logger_mean": 0.48652944167751005
+    },
+    {
+      "cb_type": "ips",
+      "learning_rate": 0.5,
+      "lambda": 1.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.4537677960784314,
+          "ips_standard_error": 0.04633602799728177,
+          "effective_sample_size": 131.95948918067444,
+          "snips_mean_cost": 0.5349585421280196
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.5830377717391304,
+          "ips_standard_error": 0.06390108142818639,
+          "effective_sample_size": 93.02549066764917,
+          "snips_mean_cost": 0.6303687414709446
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.5601900366972477,
+          "ips_standard_error": 0.06233618982174773,
+          "effective_sample_size": 96.16217928092777,
+          "snips_mean_cost": 0.6070411918562668
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.5016229590643275,
+          "ips_standard_error": 0.06822863068927251,
+          "effective_sample_size": 73.79906242043957,
+          "snips_mean_cost": 0.6210038448182323
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.5047499323671498,
+          "ips_standard_error": 0.060171744208834047,
+          "effective_sample_size": 100.43385071877135,
+          "snips_mean_cost": 0.5656345696566439
+        }
+      ],
+      "ips_mean": 0.5206736991892573,
+      "ips_standard_deviation": 0.051341297693082634,
+      "snips_mean": 0.5918013779860215,
+      "snips_standard_deviation": 0.04027495303718677,
+      "logger_mean": 0.48652944167751005
+    },
+    {
+      "cb_type": "ips",
+      "learning_rate": 0.1,
+      "lambda": 1.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.48286616470588234,
+          "ips_standard_error": 0.04393486824355127,
+          "effective_sample_size": 160.1906879555685,
+          "snips_mean_cost": 0.5395439867689835
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.6017762065217391,
+          "ips_standard_error": 0.059557619224728506,
+          "effective_sample_size": 110.3938255482257,
+          "snips_mean_cost": 0.6268352255888083
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.5919109908256881,
+          "ips_standard_error": 0.056533419069240094,
+          "effective_sample_size": 121.46177785272013,
+          "snips_mean_cost": 0.629166839719742
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.5270124561403509,
+          "ips_standard_error": 0.059379581897009724,
+          "effective_sample_size": 92.12615935293947,
+          "snips_mean_cost": 0.6158782995236437
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.5001875362318841,
+          "ips_standard_error": 0.05350859864388351,
+          "effective_sample_size": 112.07613723846086,
+          "snips_mean_cost": 0.5636410963474487
+        }
+      ],
+      "ips_mean": 0.5407506708851089,
+      "ips_standard_deviation": 0.05368010997809549,
+      "snips_mean": 0.5950130895897252,
+      "snips_standard_deviation": 0.04085188888168363,
+      "logger_mean": 0.48652944167751005
+    },
+    {
+      "cb_type": "ips",
+      "learning_rate": 1.0,
+      "lambda": 10.0,
+      "folds": [
+        {
+          "test_examples": 255,
+          "logger_mean_cost": 0.4627450980392157,
+          "ips_mean_cost": 0.349470431372549,
+          "ips_standard_error": 0.09541812334651979,
+          "effective_sample_size": 22.801843838095653,
+          "snips_mean_cost": 0.4555832719992501
+        },
+        {
+          "test_examples": 184,
+          "logger_mean_cost": 0.4945652173913043,
+          "ips_mean_cost": 0.5457867717391305,
+          "ips_standard_error": 0.1955727597188873,
+          "effective_sample_size": 13.44206634063019,
+          "snips_mean_cost": 0.6383342065464759
+        },
+        {
+          "test_examples": 218,
+          "logger_mean_cost": 0.5,
+          "ips_mean_cost": 0.39795750458715595,
+          "ips_standard_error": 0.14092861028314088,
+          "effective_sample_size": 13.774209475248343,
+          "snips_mean_cost": 0.5647642024323649
+        },
+        {
+          "test_examples": 171,
+          "logger_mean_cost": 0.49707602339181284,
+          "ips_mean_cost": 0.2789284678362573,
+          "ips_standard_error": 0.11573596263751787,
+          "effective_sample_size": 7.92897768681575,
+          "snips_mean_cost": 0.815753698889867
+        },
+        {
+          "test_examples": 207,
+          "logger_mean_cost": 0.4782608695652174,
+          "ips_mean_cost": 0.4542314782608695,
+          "ips_standard_error": 0.15139878020195865,
+          "effective_sample_size": 16.85130843664878,
+          "snips_mean_cost": 0.612378505353279
+        }
+      ],
+      "ips_mean": 0.40527493075919246,
+      "ips_standard_deviation": 0.10157686322382804,
+      "snips_mean": 0.6173627770442474,
+      "snips_standard_deviation": 0.13111332883637075,
+      "logger_mean": 0.48652944167751005
+    }
+  ]
+}

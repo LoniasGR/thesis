@@ -1,0 +1,26 @@
+{
+  "evaluation_examples": 585,
+  "logger": {
+    "name": "synthetic random logger",
+    "ips_mean_cost": 0.46153846153846156,
+    "snips_mean_cost": 0.46153846153846156,
+    "standard_error": 0.020611203909448726,
+    "effective_sample_size": 585.0
+  },
+  "q_020": {
+    "learning_rate": 0.1,
+    "lambda": 1.0,
+    "ips_mean_cost": 0.4681566803418804,
+    "snips_mean_cost": 0.45755508292395136,
+    "standard_error": 0.021760740036071695,
+    "effective_sample_size": 562.8066152989796
+  },
+  "q_050": {
+    "learning_rate": 0.1,
+    "lambda": 10.0,
+    "ips_mean_cost": 0.5590466136752137,
+    "snips_mean_cost": 0.47673600069541394,
+    "standard_error": 0.05280735323064379,
+    "effective_sample_size": 207.62969668333227
+  }
+}

@@ -66,33 +66,25 @@ def remove_useless_intents(intents: list[str]):
             clean_intents += i.split("+")
         else:
             clean_intents.append(i)
-    return list(
-        {
-            
-                x
-                for x in clean_intents
-                if x
-                not in [
-                    "time_declare",
-                    "insult",
-                    "affirmative",
-                    "negative",
-                    "greetings",  # maybe tell we haven't greeted ourselves
-                    "stop_executing",
-                    "region_declare",
-                    "goodbye",
-                    "thank_you",
-                    "didnt_understand",
-                    "all_of_them",
-                    "out_of_scope",
-                    "positive_feedback",
-                    "may_i_ask",
-                    "sorry",
-                    "no_action",
-                ]
-            
-        }
-    )
+    ignored_intents = {
+        "time_declare",
+        "insult",
+        "affirmative",
+        "negative",
+        "greetings",
+        "stop_executing",
+        "region_declare",
+        "goodbye",
+        "thank_you",
+        "didnt_understand",
+        "all_of_them",
+        "out_of_scope",
+        "positive_feedback",
+        "may_i_ask",
+        "sorry",
+        "no_action",
+    }
+    return list(dict.fromkeys(x for x in clean_intents if x not in ignored_intents))
 
 
 def get_unique_functionalities():

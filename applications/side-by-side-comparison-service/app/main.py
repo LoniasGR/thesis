@@ -1,6 +1,6 @@
+import argparse
 import logging
 import random
-import sys
 import uuid
 
 from client import client
@@ -21,7 +21,7 @@ logger.setLevel(logging.DEBUG)
 output = shouldPrint(True)
 
 
-def loop():
+def loop(include_llm: bool) -> None:
     client.initialize_genai_chat()
     result = client.get_random_dialogues()
     state = result["state"]
@@ -36,12 +36,20 @@ def loop():
         )
         actions_data["previous_slot_values"].pop(-1)
         random_suggestion = random.choice(actions_data["remaining_suggestions"])
-        llm_suggestion = client.get_generated_suggestion(dialogue)
-        popularity_suggestion = random.choice(
-            intent_to_suggestion_popularity_baseline[
-                actions_data["previous_intents"][-1]
-            ]
+        latest_intent = actions_data["previous_intents"][-1]
+        popularity_candidates = intent_to_suggestion_popularity_baseline.get(
+            latest_intent
         )
+        if popularity_candidates is None:
+            popularity_candidates = next(
+                (
+                    intent_to_suggestion_popularity_baseline[intent]
+                    for intent in reversed(latest_intent.split("+"))
+                    if intent in intent_to_suggestion_popularity_baseline
+                ),
+                ["no_action"],
+            )
+        popularity_suggestion = random.choice(popularity_candidates)
         suggestions = {
             "random": {
                 "utt": (
@@ -59,10 +67,6 @@ def loop():
                 ),
                 "intent": smart_suggestion,
             },
-            # "llm": {
-                # "utt": functionality_proposal[llm_suggestion["suggestion"]],
-                # "intent": llm_suggestion["suggestion"],
-            # },
             "popularity": {
                 "utt": (
                     random.choice(functionality_proposal[popularity_suggestion])
@@ -72,6 +76,13 @@ def loop():
                 "intent": popularity_suggestion,
             },
         }
+        llm_suggestion = None
+        if include_llm:
+            llm_suggestion = client.get_generated_suggestion(dialogue)
+            suggestions["llm"] = {
+                "utt": functionality_proposal[llm_suggestion["suggestion"]],
+                "intent": llm_suggestion["suggestion"],
+            }
         output(f"Suggestions: {suggestions}")
         assessed_suggestion = client.assess_suggestions(dialogue, suggestions)
         output(f"Assessed suggestion: {assessed_suggestion}")
@@ -94,7 +105,9 @@ def loop():
                     smart_suggestion=smart_suggestion,
                     random_suggestion=random_suggestion,
                     popularity_suggestion=popularity_suggestion,
-                    # llm_suggestion=llm_suggestion["suggestion"],
+                    llm_suggestion=(
+                        llm_suggestion["suggestion"] if llm_suggestion else None
+                    ),
                     choice=assessed_suggestion["picked"],
                     choice_reason=assessed_suggestion["reasoning"],
                 )
@@ -102,8 +115,29 @@ def loop():
         session.commit()
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Run side-by-side suggestion evaluations."
+    )
+    parser.add_argument("rounds", type=int, help="number of dialogue runs")
+    llm_mode = parser.add_mutually_exclusive_group()
+    llm_mode.add_argument(
+        "--with-llm",
+        action="store_true",
+        help="include the LLM recommendation as option 4",
+    )
+    llm_mode.add_argument(
+        "--without-llm",
+        action="store_true",
+        help="compare random, smart, and popularity recommendations only",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
     from tqdm import tqdm
 
-    for i in tqdm(range(int(sys.argv[1]))):
-        loop()
+    args = parse_args()
+    include_llm = args.with_llm or not args.without_llm
+    for i in tqdm(range(args.rounds)):
+        loop(include_llm)

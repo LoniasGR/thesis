@@ -8,12 +8,15 @@ services:
       - UID=${USID}
       - GID=${GID}
       - DB_URL=sqlite:///./production.db
+      - HUMAN_EVALUATION_DB_URL=sqlite:///./human_evaluation.db
       - MOCK_DIALOGUES_URL=http://mock-dialogues-service
       - SMART_SUGGEST_MICROSERVICE_URL=http://smart-suggest-microservice
+      - LLM_API_KEY=${LITELLM_MASTER_KEY:?set it in .env}
     container_name: side-by-side-comparison
     hostname: side-by-side-comparison
     volumes:
       - ./production.db:/code/app/production.db
+      - ./human_evaluation.db:/code/app/human_evaluation.db
     restart: always
   litellm:
     image: docker.litellm.ai/berriai/litellm:main-stable

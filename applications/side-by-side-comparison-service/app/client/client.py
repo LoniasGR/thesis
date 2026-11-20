@@ -216,11 +216,19 @@ class AssessedSuggestion(BaseModel):
 def assess_suggestions(dialogue, suggestions):
     if not client:
         return None
+    option_labels = {
+        index + 1: (name, suggestion)
+        for index, (name, suggestion) in enumerate(suggestions.items())
+    }
+    option_text = "\n".join(
+        f"Suggestion {index}: {suggestion}"
+        for index, (_, suggestion) in option_labels.items()
+    )
     response = client.responses.parse(
         model=evaluation_model,
         instructions="""
         You are responsible for evaluating the output of a
-        There are 4 options A/B/C/D tested currently
+        There are {len(option_labels)} options tested currently
         and your job is to pick the one that seems the most appropriate based on the 
         dialogue provided. Please provide your response in a JSON format with a
         field "picked" indicating the suggestion number you consider the most appropriate, together
@@ -228,9 +236,7 @@ def assess_suggestions(dialogue, suggestions):
         """,
         input=f"""
         Dialogue: {'\n'.join(dialogue)}
-        Suggestion 1: {suggestions["random"]}
-        Suggestion 2: {suggestions["smart"]}
-        Suggestion 3: {suggestions["popularity"]}
+        {option_text}
         """,
         text_format=AssessedSuggestion,
     )

@@ -9,3 +9,13 @@ engine = create_engine(
     pool_size=10,
     max_overflow=20,
 )
+
+HUMAN_EVALUATION_DATABASE_URL = os.getenv(
+    "HUMAN_EVALUATION_DB_URL", "sqlite:///./human_evaluation.db"
+)
+human_evaluation_engine = create_engine(
+    HUMAN_EVALUATION_DATABASE_URL,
+    connect_args={"check_same_thread": False},
+    pool_size=10,
+    max_overflow=20,
+)

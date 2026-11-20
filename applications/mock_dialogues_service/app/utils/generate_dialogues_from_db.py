@@ -6,7 +6,6 @@ os.environ["DB_URL"] = "sqlite:///./production.db"
 from db.database import SessionLocal
 from db.crud import get_all_answered_evaluations
 from helpers import (
-    get_unique_functionalities,
     remove_useless_intents,
     generate_remaining_suggestions,
 )
@@ -25,23 +24,22 @@ def main():
 def create_vw_line(
     context: list[str], response: bool, suggestion: str, file: TextIOWrapper
 ):
-    unique_actions = get_unique_functionalities()
     functionalities = [intent_to_functionality_dict[x] for x in context]
     remaining_suggestions = generate_remaining_suggestions(functionalities)
     intents = remove_useless_intents(context)
 
     result = -(int(response) - 1)
 
-    probability = 1.0 / (len(remaining_suggestions) + 1)
+    probability = 1.0 / len(remaining_suggestions)
 
-    file.write(f"shared | {' '.join(map(str, intents))}\n")
+    file.write(f"shared |S {' '.join(map(str, intents))}\n")
     file.write(
-        f"{unique_actions.index(suggestion)}:{float(result)}:{probability} | {suggestion}\n"
+        f"0:{float(result)}:{probability} |A action={suggestion}\n"
     )
 
     for sug in remaining_suggestions:
         if sug != suggestion:
-            file.write(f"| {sug}\n")
+            file.write(f"|A action={sug}\n")
     file.write("\n")
 
 

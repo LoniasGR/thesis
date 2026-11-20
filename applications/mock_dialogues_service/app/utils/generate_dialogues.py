@@ -10,7 +10,7 @@ from common.mappings import (
     functionality_proposal,
     limited_intent_to_response_dict,
 )
-from common.helpers import remove_useless_intents, get_unique_functionalities
+from common.helpers import remove_useless_intents
 
 
 def screen_clear():
@@ -95,17 +95,17 @@ def get_user_input():
 def record_feedback(
     dialogue, suggestion, resp, previous_slot_values=[], filename="rl_hf.dat"
 ):
-    unique_actions = get_unique_functionalities()
     remaining_suggestions = get_remaining_suggestions(dialogue, previous_slot_values)
 
-    probability = 1.0 / (len(remaining_suggestions) + 1)
+    probability = 1.0 / len(remaining_suggestions)
     context = remove_useless_intents(dialogue + previous_slot_values)
+    cost = 1 - resp
 
-    buffer = f"shared |{' '.join(map(str, context))}\n"
-    buffer += f"{unique_actions.index(suggestion)}:{float(resp)}:{probability} |{suggestion}\n"
+    buffer = f"shared |S {' '.join(map(str, context))}\n"
+    buffer += f"0:{float(cost)}:{probability} |A action={suggestion}\n"
     for sug in remaining_suggestions:
         if sug != suggestion:
-            buffer += f"|{sug}\n"
+            buffer += f"|A action={sug}\n"
     buffer += "\n"
 
     with open(filename, "a") as out_file:

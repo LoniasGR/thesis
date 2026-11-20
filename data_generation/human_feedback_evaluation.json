@@ -1,0 +1,38 @@
+{
+  "model": "candidate_model.vw",
+  "data": "applications/mock_dialogues_service/new_data.dat",
+  "examples": 585,
+  "observed_random_cost": 0.46153846153846156,
+  "observed_relevance_rate": 0.5384615384615384,
+  "candidate": {
+    "ips_mean_cost": 0.4681566803418804,
+    "snips_mean_cost": 0.45755508292395136,
+    "standard_error": 0.021760740036071695,
+    "effective_sample_size": 562.8066152989796
+  },
+  "random": {
+    "ips_mean_cost": 0.46153846153846156,
+    "snips_mean_cost": 0.46153846153846156,
+    "standard_error": 0.020611203909448726,
+    "effective_sample_size": 585.0
+  },
+  "always_no_action": {
+    "ips_mean_cost": 0.4205128205128205,
+    "snips_mean_cost": 0.5234042553191489,
+    "standard_error": 0.08156110431465699,
+    "effective_sample_size": 47.9175704989154
+  },
+  "candidate_argmax_actions": {
+    "vaccine_stats_form": 116,
+    "ill_questionnaire_form": 197,
+    "covid_statistics_form": 32,
+    "underlying_conditions": 34,
+    "ways_of_protection": 11,
+    "test_cost": 43,
+    "icu_stats_form": 86,
+    "pharmacy_form": 30,
+    "what_to_do_if_positive": 10,
+    "symptoms": 23,
+    "test_types": 3
+  }
+}
